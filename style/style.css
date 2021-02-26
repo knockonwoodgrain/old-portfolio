@@ -31,7 +31,7 @@ body {
     backdrop-filter: blur( 19.0px );
     -webkit-backdrop-filter: blur( 10.0px );
     border-radius: 1.85vw;
-    border: solid 2.65px rgba(0, 0, 0, 0.527);
+    border: solid 2.65px rgba(190, 190, 190, 0.527);
     padding: 1.5vw;
     width: 90%; 
     height: fit-content; 
@@ -44,17 +44,17 @@ body {
     border: solid 7px rgba(0, 0, 0, 0.5);
 }
 .text {
-    background: rgba(0, 0, 0, 0.26);
+    background: rgba(0, 0, 0, 0.452);
     position: absolute;
-    border: solid 2.65px rgba(0, 0, 0, 0.205);
-    backdrop-filter: blur( 3.0px );
+    border: solid 2.65px rgba(255, 255, 255, 0.205);
+    backdrop-filter: blur( 2.59px );
     -webkit-backdrop-filter: blur( 10.0px );
     border-radius: 10px;    
     padding: 0.5vw;  
     color: white;
-    top: 95%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
+    bottom: 0%;
+    left:35%;
+    right:35%; 
 }
 h3::after{
     position: absolute;
@@ -65,7 +65,7 @@ h3::after{
     margin: 0;
     height: 0.7vw;
     border-radius: 0.2vw;
-    border: solid 0.5px rgba(0, 0, 0, 0.5);
+    border: solid 0.5px rgba(235, 235, 235, 0.5);
     width: 6.5vw;
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.527);
