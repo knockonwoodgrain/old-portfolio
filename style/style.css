@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 
 body {
@@ -6,7 +6,7 @@ body {
     padding: 0em;
     color: rgb(12, 22, 8);
     min-height: 100%;
-    font-family: 'Open Sans';
+    font-family: 'Montserrat';
 }
 .main {
     position: fixed;
