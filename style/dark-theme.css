@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+.glass.dark-theme{
+    background-color: rgba(0, 0, 0, 0.452);
+}
+body{
+    margin: 0px;
+    padding: 0em;
+    color: rgb(216, 216, 216);
+    min-height: 100%;
+    font-family: 'Montserrat';
+}
+
+.main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+.overlay {
+    background-image: url(darkmode.jpg);
+    min-height: 100%;
+    min-width: 100%;
+    display: block;
+    background-size:cover;
+    position: absolute;
+    background-position: center;
+    
+}
+.glass {
+    background: rgba(63, 63, 63, 0.287);
+    box-shadow: 0 10px 16px 0px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur( 55.0px );
+    -webkit-backdrop-filter: blur( 10.0px );
+    border-radius: 1.85vw;
+    border: solid 3px rgba(255, 255, 255, 0);
+    padding: 1.5vw;
+    width: fit-content; 
+    height: fit-content; 
+    display: block; 
+    margin: auto;
+}
+
+.hr {
+    border-radius: 0.2vw;
+    border: solid 7px rgba(0, 0, 0, 0.5);
+}
+.text {
+    background: rgba(255, 255, 255, 0.157);
+    position: absolute;
+    border: solid 2.65px #00000000;
+    backdrop-filter: blur( 50px );
+    -webkit-backdrop-filter: blur( 10.0px );
+    border-radius: 1.85vw;    
+    padding: 0.5vw;  
+    color: rgb(187, 187, 187);
+    bottom: 36%;
+    padding: 1.5vw;
+    left:72%;
+    right:03.6%; 
+    padding-top: 1.5vw;
+    padding-bottom: 0.4vw;
+    box-shadow: 0 10px 12px 0px rgba(0, 0, 0, 0.6);
+}
+
+.para {
+    font-size: 1.5vw; 
+    color: rgb(200, 200, 200);
+    text-shadow:0px 1px 19px #00000073;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    margin-bottom: 2vh;
+    width: 100%;
+    position: relative;
+}
+.texxt {
+    font-size: 3vw; 
+    text-align: center;
+    background: rgba(0, 0, 0, 0.39);
+    border: solid 0.2px rgba(106, 255, 193, 0);
+    border-radius: 1vw;    
+    color: rgb(200, 200, 200);
+    max-width: fit-content;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    box-shadow: 0 5px 16px 0px rgba(0, 0, 0, 0.6);
+    transition: 0.04s;
+}
+#glassone:hover,#glasstwo:hover,h3:hover,#glassoriginal:hover,h1:hover{
+    box-shadow: 0 17px 16px 0px rgba(0, 0, 0, 0.6);
+    font-size: 3.2vw;
+}
+.button{
+    border: solid 2.65px #00000000;
+    border-radius: 9px;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 1vw;
+}
+.textcolor{
+    color: rgb(200, 200, 200);
+}
