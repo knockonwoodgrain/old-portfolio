@@ -39,8 +39,8 @@ body{
     padding: 1.5vw;
     width: fit-content; 
     height: fit-content; 
-    display: block; 
     margin: auto;
+    overflow: hidden;
 }
 
 .hr {
@@ -88,17 +88,39 @@ h1, h2, h3, h4, h5, h6 {
     padding-right: 1vw;
     box-shadow: 0 5px 16px 0px rgba(0, 0, 0, 0.6);
     transition: 0.04s;
+    overflow: hidden;
 }
 #glassone:hover,#glasstwo:hover,h3:hover,#glassoriginal:hover,h1:hover{
     box-shadow: 0 17px 16px 0px rgba(0, 0, 0, 0.6);
-    font-size: 3.2vw;
 }
-.button{
-    border: solid 2.65px #00000000;
-    border-radius: 9px;
-    background-color: rgba(0, 0, 0, 0);
+.btn-toggle{
     font-size: 1vw;
+    cursor: pointer;
+    font-weight: bolder; 
+    background-color: #00000000;
+    color: rgb(0, 0, 0);
+    border: none;
+    outline: none;
+    transform: translateZ(30px);
 }
+.buttton{
+    bottom: 1vw; 
+    display: block; 
+    left: 47%; 
+    right: 51%;
+    outline: none;
+    cursor: pointer;
+    padding: 0.69vw;
+    position: absolute; 
+    border-radius: 0.85vw;
+    box-shadow: 0 10px 12px 0px rgba(0, 0, 0, 0.6); 
+    border: solid 2.65px #00000000;
+    background-color: rgba(255, 255, 255, 0.466);
+    min-width: fit-content;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+
 .textcolor{
     color: rgb(0, 0, 0);
 }
