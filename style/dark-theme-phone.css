@@ -9,7 +9,6 @@ body{
     min-height: 100%;
     font-family: 'Montserrat';
     overflow: overlay;
-    cursor: url("cursor.png");
 }
 ::selection{
     background-color: rgba(0, 0, 0, 0.164);
@@ -40,8 +39,7 @@ body{
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
     box-shadow: 1px 10px 10px 0px rgba(0, 0, 0, 0.6);
 }
-
-@media (min-width:700px){
+@media (max-width:700px){
 .main {
     position: fixed;
     top: 0;
@@ -66,63 +64,53 @@ body{
     box-shadow: 0 10px 16px 0px rgba(0, 0, 0, 0.6);
     backdrop-filter: blur( 50.0px );
     -webkit-backdrop-filter: blur( 10.0px );
-    border-radius: 1.85vw;
+    border-radius: 3vw;
     border: solid 3px rgba(255, 255, 255, 0);
     padding: 1.5vw;
     width: fit-content; 
     height: fit-content; 
     margin: auto;
-    animation-name: fadein;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    border: solid 1.69px rgba(78, 78, 78, 0.192);
-}
-@keyframes fadein{
-    0% {transform: translateY(4vw);}
-    100% {transform: translateY(0);}
-}
-#glassone, #glasstwo, #themetext{
-    display: inline-block;
-}
-#glasstwo {
-    position: absolute;
-}
-#blog {
-    display:grid;
-}
-#socialmedia {
-    margin-left: 0.01vw; 
-    margin-right: 0.01vw;
-}
-#glassoriginal, #blog{
-    max-width: 90%;
-    min-width: 90%;
-}
-#first {
-    margin-top: 1vw;
-    margin-left: 0;
-    margin-bottom: 1vw;
-    margin-right:0;
-    font-weight: 500;
-}
-.hr {
-    border-radius: 0.2vw;
-    border: solid 7px rgba(0, 0, 0, 0.5);
+    border: solid 1.69px rgba(78, 78, 78, 0.192);   
+    z-index: 99;
 }
 
 .para {
-    font-size: 1.5vw; 
     color: rgb(200, 200, 200);
     text-shadow:0px 1px 19px #00000073;
     transform: translate3d(20px);
     -webkit-font-smoothing: antialiased;
+    font-size: 3.1vw;
 }
 .blog {
-    font-size: 1vw; 
     color: rgb(200, 200, 200);
     text-shadow:0px 1px 19px #00000073;
     transform: translate3d(20px);
     -webkit-font-smoothing: antialiased;
+    font-size: 3vw;
+}
+.texxt {
+    font-size:5vw; 
+    text-align: center;
+    background: rgba(0, 0, 0, 0.39);
+    border: solid 0.2px rgba(106, 255, 193, 0);
+    border-radius: 2vw;    
+    color: rgb(200, 200, 200);
+    max-width: fit-content;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    box-shadow: 0 5px 16px 0px rgba(0, 0, 0, 0.6);
+    transition: 0.04s;
+    overflow: hidden;
+    margin-top: 1vw;
+    -webkit-font-smoothing: antialiased;
+}
+#socialmedia{
+    min-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    
 }
 h1, h2, h3, h5, h6 {
     margin: 0;
@@ -131,27 +119,14 @@ h1, h2, h3, h5, h6 {
     position: relative;
     -webkit-font-smoothing: antialiased;
 }
-
-.texxt {
-    font-size: 3vw; 
-    text-align: center;
-    background: rgba(0, 0, 0, 0.39);
-    border: solid 0.2px rgba(106, 255, 193, 0);
-    border-radius: 1vw;    
+.textcolor {
     color: rgb(200, 200, 200);
-    max-width: fit-content;
-    padding-left: 1vw;
-    padding-right: 1vw;
-    box-shadow: 0 5px 16px 0px rgba(0, 0, 0, 0.6);
-    transition: 0.04s;
-    overflow: hidden;
-    -webkit-font-smoothing: antialiased;
 }
 .texxst {
-    font-size: 3vw; 
+    font-size: 5vw; 
     background: rgba(0, 0, 0, 0.39);
     border: solid 0.2px rgba(106, 255, 193, 0);
-    border-radius: 1vw;    
+    border-radius: 2vw;    
     color: rgb(200, 200, 200);
     box-shadow: 0 5px 16px 0px rgba(0, 0, 0, 0.6);
     transition: 0.04s;
@@ -160,85 +135,116 @@ h1, h2, h3, h5, h6 {
     padding-right: 1vw;
     text-align: center;
     max-width: fit-content;
-    margin-left: 41%;
-    margin-right: 45%;
-   
+    margin-left: 35%;
+    margin-right: 35%;
 }
-#glassone:hover,#glasstwo:hover,h3:hover,#glassoriginal:hover,h1:hover{
-    box-shadow: 0 17px 16px 0px rgba(0, 0, 0, 0.6);
-}
-.btn-toggle{
-    transform: translateZ(30px);
-    display: inline;
-}
-#themeimage{
-    display: none;
-}
-#themeimg{
-    display: none;
-}
-.button{
-    display: inline-block;
-    margin-left: 19%; 
-    position: relative;
+.buttton{
+    display: block;
     outline: none;
     cursor: pointer;
-    padding: 0.69vw;
+    backdrop-filter: blur( 20.0px );
+    -webkit-backdrop-filter: blur( 10.0px );
     max-width: fit-content; 
-    border-radius: 1vw;
+    border-radius: 5.85vw;
     box-shadow: 0 10px 12px 0px rgba(0, 0, 0, 0.6); 
     border: solid 2.65px #00000000;
-    background-color: rgba(0, 0, 0, 0.452);
+    background-color: rgba(192, 192, 192, 0.609);
     min-width: fit-content;
-    transform-style: preserve-3d;
-    transform: perspective(1000px);
     border: solid 0.5px rgba(255, 255, 255, 0.192);
+    position: fixed;
+    top: 2vw;
+    right: 5vw;
+    z-index: 999;
 }
-.btn-toggle{
-    display: block;
+#themeimage{
+    width: 6vw;
+    height: 6vw;
+}
+#buttontext{
+    display:none
+}
+.btn-toggle-phone{
     cursor: pointer;
     background-color: #00000000;
-    color: rgb(0, 0, 0);
+    color: rgb(197, 197, 197);
     border: none;
     outline: none;
-    transform: translateZ(30px);
-    display: block;
-    font-size: 1vw;
-    cursor: pointer;
-    font-weight: bolder; 
-    background-color: #00000000;
-    color: rgb(255, 255, 255);
-    border: none;
-    outline: none;
-}
-.textcolor{
-    color: rgb(200, 200, 200);
-}
-.glass:hover, .texxt:hover, .readmore:hover{
-    background-color: rgba(63, 63, 63, 0.267);
-    border: solid 3px rgba(255, 255, 255, 0.192);
-}
-.texxst:hover{
-    border: solid 3px rgba(255, 255, 255, 0.192);
-}
+    padding: 0;
+    padding-top: 0.69vw;
+    padding-right: 0.69vw;
+    padding-left: 0.69vw;
+    margin: 0;
 
+}
+#glassone, #glasstwo {
+    min-width: 40vw;
+    margin-left: 4vw;
+    display: inline-block;
+}
+#glasstwo {
+    margin-right: 2vw;
+}
+#glassoriginal, #blog {
+    margin-bottom: 0;
+    position:relative;
+    max-width: 88%;
+}
+#first {
+    margin-top: 3vw;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right:0;
+    font-weight: 500;
+}
+#blog {
+    margin-top: 2vw;
+}
+#Title {
+    font-size: 6.9vw;
+    margin-bottom: 2vw;
+}
+#more {display: none;}
+.button{
+    display: none;
+}
+.texxst:hover, .texxt:hover{
+    animation-name: scale;
+    animation-duration: 0.69s;
+    animation-iteration-count: 1;
+}
+.glass:hover{
+    animation-name: scale1;
+    animation-duration: 0.69s;
+    animation-iteration-count: 1;
+}
+@keyframes scale{
+    0% {}
+    25% {transform: scale(0.69);background: rgba(0, 0, 0, 0);}
+    75% {transform: scale(1.1);}
+    100% {}
+}
+@keyframes scale1{
+    0% {}
+    25% {transform: scale(0.87);background: rgba(0, 0, 0, 0);}
+    75% {transform: scale(1.069);}
+    100% {}
+}
 .readmore{
-    padding: 0.2vw;
-    font-size: 1.5vw;
+    padding: 1.1vw;
+    padding-bottom: 1.5vw;
+    font-size: 2.5vw;
     position: relative;
     margin-left: 1vw;
     max-width: fit-content; 
-    border-radius: 0.5vw;
+    border-radius: 1.5vw;
     border: solid 1px #ffffff49;
     background-color: rgba(85, 85, 85, 0.274);
     color: rgb(200, 200, 200);
     text-align: center;
     max-width: fit-content;
-    margin-left: 41%;
     margin-right: 0;
     overflow: hidden;
+    margin-bottom: 2vw;
     font-weight: 600;
 }
-#more {display: none;}
 }
-@media (min-width:700px){}

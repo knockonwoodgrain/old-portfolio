@@ -40,7 +40,6 @@ body{
     box-shadow: 1px 10px 10px 0px rgba(0, 0, 0, 0.6);
 
 }
-
 .main {
     position: fixed;
     top: 0;
@@ -79,7 +78,33 @@ body{
     0% {transform: translateY(4vw);}
     100% {transform: translateY(0);}
 }
-
+#glassone, #glasstwo, #theme{
+    display: inline-block;
+}
+#glasstwo {
+    position: absolute;
+}
+#blog {
+    display:grid;
+}
+#blogs {
+    font-weight: 600;
+}
+#socialmedia {
+    margin-left: 0.01vw; 
+    margin-right: 0.01vw;
+}
+#glassoriginal, #blog{
+    max-width: 90%;
+    min-width: 90%;
+}
+#first {
+    margin-top: 1vw;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right:0;
+    font-weight: 700;
+}
 .hr {
     border-radius: 0.2vw;
     border: solid 7px rgba(0, 0, 0, 0.5);
@@ -119,6 +144,7 @@ h1, h2, h3, h5, h6 {
     width: 100%;
     position: relative;
 }
+
 .texxt {
     font-size: 3vw; 
     text-align: center;
@@ -135,7 +161,7 @@ h1, h2, h3, h5, h6 {
 }
 .texxst {
     font-size: 3vw; 
-    background: rgba(255, 255, 255, 0.39);
+    background: rgba(0, 0, 0, 0.219);
     border: solid 0.2px rgba(106, 255, 193, 0);
     border-radius: 1vw;    
     color: rgb(0, 0, 0);
@@ -162,7 +188,7 @@ h1, h2, h3, h5, h6 {
     outline: none;
     transform: translateZ(30px);
 }
-.buttton{
+.button{
     display: inline-block;
     margin-left: 19%; 
     position: relative;
@@ -179,7 +205,9 @@ h1, h2, h3, h5, h6 {
     transform: perspective(1000px);
     border: solid 0.5px rgba(255, 255, 255, 0.192);
 }
-
+#themeimg{
+    display: none;
+}
 .textcolor{
     color: rgb(0, 0, 0);
 }
@@ -199,8 +227,10 @@ h1, h2, h3, h5, h6 {
     color: rgb(0, 0, 0);
     text-align: center;
     max-width: fit-content;
-    margin-left: 59%;
+    margin-left: 41%;
+    margin-bottom: 2vw;
     margin-right: 0%;
     overflow: hidden;
+    font-weight: 600;
 }
 #more {display: none;}
