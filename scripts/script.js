@@ -1,11 +1,27 @@
 const btn = document.querySelector(".btn-toggle");
+const btnphone = document.querySelector(".btn-toggle-phone")
 const theme = document.querySelector("#theme-link");
-
+var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+if (width <= 700){
+  theme.href = "style/dark-theme-phone.css"
+}
+btnphone.addEventListener("click", function (){
+  if (theme.getAttribute("href") == "style/dark-theme-phone.css") {
+    theme.href = "style/light-theme-phone.css"
+  }else if (theme.getAttribute("href") == "style/light-theme-phone.css") {
+    theme.href = "style/dark-theme-phone.css"
+  }
+});
 btn.addEventListener("click", function () {
   // Swap out the URL for the different stylesheets
   if (theme.getAttribute("href") == "style/dark-theme.css") {
     theme.href = "style/light-theme.css";
-  } else {
+  }else if (theme.getAttribute("href") == "style/dark-theme-phone.css") {
+    theme.href = "style/light-theme-phone.css"
+  }else if (theme.getAttribute("href") == "style/light-theme-phone.css") {
+    theme.href = "style/dark-theme-phone.css"
+  }
+  else {
     theme.href = "style/dark-theme.css";
   }
 });
