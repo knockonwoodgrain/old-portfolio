@@ -96,6 +96,8 @@ body{
     transform: translate3d(20px);
     -webkit-font-smoothing: antialiased;
     font-size: 3vw;
+    text-align: justify;
+    text-justify: inter-word;
 }
 .texxt {
     font-size:5vw; 
