@@ -87,7 +87,33 @@ body{
     0% {transform: translateY(4vw);}
     100% {transform: translateY(0);}
 }
-
+#glassone, #glasstwo, #theme{
+    display: inline-block;
+}
+#glasstwo {
+    position: absolute;
+}
+#blog {
+    display:grid;
+}
+#blogs {
+    font-weight: 600;
+}
+#socialmedia {
+    margin-left: 0.01vw; 
+    margin-right: 0.01vw;
+}
+#glassoriginal, #blog{
+    max-width: 90%;
+    min-width: 90%;
+}
+#first {
+    margin-top: 1vw;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right:0;
+    font-weight: 700;
+}
 .hr {
     border-radius: 0.2vw;
     border: solid 7px rgba(0, 0, 0, 0.5);
@@ -115,13 +141,11 @@ body{
     text-shadow:0px 1px 19px #00000073;
 }
 .blog {
-    font-size: 1vw; 
+    font-size: 1.15vw; 
     color: rgb(0, 0, 0);
     text-shadow:0px 1px 19px #00000073;
     transform: translate3d(20px);
     -webkit-font-smoothing: antialiased;
-    text-align: justify;
-    text-justify: inter-word;
 }
 h1, h2, h3, h5, h6 {
     margin: 0;
@@ -129,6 +153,7 @@ h1, h2, h3, h5, h6 {
     width: 100%;
     position: relative;
 }
+
 .texxt {
     font-size: 3vw; 
     text-align: center;
@@ -145,7 +170,7 @@ h1, h2, h3, h5, h6 {
 }
 .texxst {
     font-size: 3vw; 
-    background: rgba(255, 255, 255, 0.39);
+    background: rgba(0, 0, 0, 0.219);
     border: solid 0.2px rgba(106, 255, 193, 0);
     border-radius: 1vw;    
     color: rgb(0, 0, 0);
@@ -172,17 +197,13 @@ h1, h2, h3, h5, h6 {
     outline: none;
     transform: translateZ(30px);
 }
-.btn-toggle1{
-    font-size: 1vw;
-    cursor: pointer;
-    font-weight: bolder; 
-    background-color: #00000000;
-    color: rgb(0, 0, 0);
-    border: none;
-    outline: none;
-    transform: translateZ(30px);
+#themeimage{
+    display: none;
 }
-.buttton{
+.btn-toggle-phone{
+    display: none;
+}
+.button{
     display: inline-block;
     margin-left: 19%; 
     position: relative;
@@ -199,11 +220,33 @@ h1, h2, h3, h5, h6 {
     transform: perspective(1000px);
     border: solid 0.5px rgba(255, 255, 255, 0.192);
 }
-
+.buttton{
+    display: inline-block;
+    margin-left: 19%; 
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    padding: 0.69vw;
+    max-width: fit-content; 
+    border-radius: 0.85vw;
+    box-shadow: 0 10px 12px 0px rgba(0, 0, 0, 0.6); 
+    border: solid 2.65px #00000000;
+    background-color: rgba(223, 223, 223, 0.452);
+    min-width: fit-content;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    border: solid 0.5px rgba(255, 255, 255, 0.192);
+}
+#themeimg{
+    display: none;
+}
+#buttontext1{
+ color: aliceblue;
+}
 .textcolor{
     color: rgb(0, 0, 0);
 }
-.glass:hover, .texxt:hover, .readmore:hover{
+.glass:hover, .texxt:hover, .texxst:hover{
     background-color: rgba(255, 255, 255, 0.5);
     border: solid 3px rgba(12, 0, 0, 0.513);
 }
@@ -214,14 +257,15 @@ h1, h2, h3, h5, h6 {
     margin-left: 1vw;
     max-width: fit-content; 
     border-radius: 0.5vw;
-    border: solid 1px #33333300;
+    border: solid 1px #ffffff00;
     background-color: rgba(85, 85, 85, 0.274);
     color: rgb(0, 0, 0);
     text-align: center;
     max-width: fit-content;
-    margin-left: 59%;
+    margin-left: 35%;
+    margin-bottom: 0.5vw;
     margin-right: 0%;
     overflow: hidden;
-    margin-bottom: 0.5vw;
+    font-weight: 600;
 }
 #more {display: none;}
