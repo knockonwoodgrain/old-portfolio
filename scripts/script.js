@@ -30,13 +30,14 @@ btnn.addEventListener("click", function () {
     theme.href = "style/dark-theme-phone.css"
   }
 });
+
 function myFunction() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
   var btnText = document.getElementById("myBtn");
   var before = document.getElementById("before");
-  var overlay = document.getElementById("overlay")
   var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+  var overlay = document.getElementById("overlay")
   console.log(width);
   if (width >= 700) {
     if (dots.style.display === "none") {
@@ -69,7 +70,7 @@ function myFunction() {
       moreText.style.fontSize = "3.2vw";
       dots.style.fontSize = "3.2vw";
       before.style.fontSize = "3.2vw"
-      overlay.style.minHeight = "450%"
+      overlay.style.minHeight = "250%"
     }
   }
 }
