@@ -70,7 +70,7 @@ function myFunction() {
       moreText.style.fontSize = "3.2vw";
       dots.style.fontSize = "3.2vw";
       before.style.fontSize = "3.2vw"
-      overlay.style.minHeight = "250%"
+      overlay.style.minHeight = "450%"
     }
   }
 }
