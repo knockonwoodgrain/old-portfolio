@@ -35,6 +35,7 @@ function myFunction() {
   var moreText = document.getElementById("more");
   var btnText = document.getElementById("myBtn");
   var before = document.getElementById("before");
+  var overlay = document.getElementById("overlay")
   var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
   console.log(width);
   if (width >= 700) {
@@ -60,6 +61,7 @@ function myFunction() {
       moreText.style.display = "none";
       before.style.fontSize = "3vw";
       dots.style.fontSize = "3vw";
+      overlay.style.minHeight = "100%"
     } else {
       dots.style.display = "none";
       btnText.innerHTML = "Read less"; 
@@ -67,6 +69,7 @@ function myFunction() {
       moreText.style.fontSize = "3.2vw";
       dots.style.fontSize = "3.2vw";
       before.style.fontSize = "3.2vw"
+      overlay.style.minHeight = "250%"
     }
   }
 }
