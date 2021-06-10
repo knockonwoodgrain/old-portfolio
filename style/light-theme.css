@@ -146,6 +146,8 @@ body{
     text-shadow:0px 1px 19px #00000073;
     transform: translate3d(20px);
     -webkit-font-smoothing: antialiased;
+    text-align: justify;
+    text-justify: inter-word;
 }
 h1, h2, h3, h5, h6 {
     margin: 0;
