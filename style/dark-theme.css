@@ -9,7 +9,6 @@ body{
     min-height: 100%;
     font-family: 'Montserrat';
     overflow: overlay;
-    cursor: url("cursor.png");
 }
 ::selection{
     background-color: rgba(0, 0, 0, 0.164);
@@ -40,8 +39,6 @@ body{
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
     box-shadow: 1px 10px 10px 0px rgba(0, 0, 0, 0.6);
 }
-
-@media (min-width:700px){
 .main {
     position: fixed;
     top: 0;
@@ -54,6 +51,15 @@ body{
 }
 .overlay {
     background-image: url(darkmode.jpg);
+    min-height: 130%;
+    min-width: 100%;
+    display: block;
+    background-size:cover;
+    position: absolute;
+    background-position: center;
+}
+.overlay1 {
+    background-image: url(https://cdn-0.idownloadblog.com/wp-content/uploads/2020/06/macOS-Big-Sur-Daylight-Wallpaper-iDownloadBlog-2-2048x2048.jpg);
     min-height: 130%;
     min-width: 100%;
     display: block;
@@ -76,34 +82,12 @@ body{
     animation-duration: 1s;
     animation-iteration-count: 1;
     border: solid 1.69px rgba(78, 78, 78, 0.192);
+    
 }
 @keyframes fadein{
     0% {transform: translateY(4vw);}
     100% {transform: translateY(0);}
-}
-#glassone, #glasstwo, #themetext{
-    display: inline-block;
-}
-#glasstwo {
-    position: absolute;
-}
-#blog {
-    display:grid;
-}
-#socialmedia {
-    margin-left: 0.01vw; 
-    margin-right: 0.01vw;
-}
-#glassoriginal, #blog{
-    max-width: 90%;
-    min-width: 90%;
-}
-#first {
-    margin-top: 1vw;
-    margin-left: 0;
-    margin-bottom: 1vw;
-    margin-right:0;
-    font-weight: 500;
+    
 }
 .hr {
     border-radius: 0.2vw;
@@ -123,6 +107,8 @@ body{
     text-shadow:0px 1px 19px #00000073;
     transform: translate3d(20px);
     -webkit-font-smoothing: antialiased;
+    text-align: justify;
+    text-justify: inter-word;
 }
 h1, h2, h3, h5, h6 {
     margin: 0;
@@ -149,6 +135,7 @@ h1, h2, h3, h5, h6 {
 }
 .texxst {
     font-size: 3vw; 
+    
     background: rgba(0, 0, 0, 0.39);
     border: solid 0.2px rgba(106, 255, 193, 0);
     border-radius: 1vw;    
@@ -168,16 +155,28 @@ h1, h2, h3, h5, h6 {
     box-shadow: 0 17px 16px 0px rgba(0, 0, 0, 0.6);
 }
 .btn-toggle{
+    font-size: 1vw;
+    cursor: pointer;
+    font-weight: bolder; 
+    background-color: #00000000;
+    color: rgb(197, 197, 197);
+    border: none;
+    outline: none;
     transform: translateZ(30px);
     display: inline;
 }
-#themeimage{
-    display: none;
+.btn-toggle1{
+    font-size: 1vw;
+    cursor: pointer;
+    font-weight: bolder; 
+    background-color: #00000000;
+    color: rgb(197, 197, 197);
+    border: none;
+    outline: none;
+    transform: translateZ(30px);
+    display: inline;
 }
-#themeimg{
-    display: none;
-}
-.button{
+.buttton{
     display: inline-block;
     margin-left: 19%; 
     position: relative;
@@ -185,7 +184,7 @@ h1, h2, h3, h5, h6 {
     cursor: pointer;
     padding: 0.69vw;
     max-width: fit-content; 
-    border-radius: 1vw;
+    border-radius: 0.85vw;
     box-shadow: 0 10px 12px 0px rgba(0, 0, 0, 0.6); 
     border: solid 2.65px #00000000;
     background-color: rgba(0, 0, 0, 0.452);
@@ -194,23 +193,6 @@ h1, h2, h3, h5, h6 {
     transform: perspective(1000px);
     border: solid 0.5px rgba(255, 255, 255, 0.192);
 }
-.btn-toggle{
-    display: block;
-    cursor: pointer;
-    background-color: #00000000;
-    color: rgb(0, 0, 0);
-    border: none;
-    outline: none;
-    transform: translateZ(30px);
-    display: block;
-    font-size: 1vw;
-    cursor: pointer;
-    font-weight: bolder; 
-    background-color: #00000000;
-    color: rgb(255, 255, 255);
-    border: none;
-    outline: none;
-}
 .textcolor{
     color: rgb(200, 200, 200);
 }
@@ -218,9 +200,7 @@ h1, h2, h3, h5, h6 {
     background-color: rgba(63, 63, 63, 0.267);
     border: solid 3px rgba(255, 255, 255, 0.192);
 }
-.texxst:hover{
-    border: solid 3px rgba(255, 255, 255, 0.192);
-}
+
 
 .readmore{
     padding: 0.2vw;
@@ -229,16 +209,14 @@ h1, h2, h3, h5, h6 {
     margin-left: 1vw;
     max-width: fit-content; 
     border-radius: 0.5vw;
-    border: solid 1px #ffffff49;
+    border: solid 1px #ffffff00;
     background-color: rgba(85, 85, 85, 0.274);
     color: rgb(200, 200, 200);
     text-align: center;
     max-width: fit-content;
-    margin-left: 41%;
+    margin-left: 59%;
     margin-right: 0;
     overflow: hidden;
-    font-weight: 600;
+    margin-bottom: 0.5vw;
 }
 #more {display: none;}
-}
-@media (min-width:700px){}

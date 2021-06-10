@@ -59,6 +59,15 @@ body{
     position: absolute;
     background-position: center;
 }
+.overlay1 {
+    background-image: url(https://cdn-0.idownloadblog.com/wp-content/uploads/2020/06/macOS-Big-Sur-Daylight-Wallpaper-iDownloadBlog-4-2048x2048.jpg);
+    min-height: 130%;
+    min-width: 100%;
+    display: block;
+    background-size:cover;
+    position: absolute;
+    background-position: center;
+}
 .glass {
     background: rgba(255, 255, 255, 0.287);
     box-shadow: 0 10px 16px 0px rgba(0, 0, 0, 0.6);
@@ -78,33 +87,7 @@ body{
     0% {transform: translateY(4vw);}
     100% {transform: translateY(0);}
 }
-#glassone, #glasstwo, #theme{
-    display: inline-block;
-}
-#glasstwo {
-    position: absolute;
-}
-#blog {
-    display:grid;
-}
-#blogs {
-    font-weight: 600;
-}
-#socialmedia {
-    margin-left: 0.01vw; 
-    margin-right: 0.01vw;
-}
-#glassoriginal, #blog{
-    max-width: 90%;
-    min-width: 90%;
-}
-#first {
-    margin-top: 1vw;
-    margin-left: 0;
-    margin-bottom: 0;
-    margin-right:0;
-    font-weight: 700;
-}
+
 .hr {
     border-radius: 0.2vw;
     border: solid 7px rgba(0, 0, 0, 0.5);
@@ -137,6 +120,8 @@ body{
     text-shadow:0px 1px 19px #00000073;
     transform: translate3d(20px);
     -webkit-font-smoothing: antialiased;
+    text-align: justify;
+    text-justify: inter-word;
 }
 h1, h2, h3, h5, h6 {
     margin: 0;
@@ -144,7 +129,6 @@ h1, h2, h3, h5, h6 {
     width: 100%;
     position: relative;
 }
-
 .texxt {
     font-size: 3vw; 
     text-align: center;
@@ -161,7 +145,7 @@ h1, h2, h3, h5, h6 {
 }
 .texxst {
     font-size: 3vw; 
-    background: rgba(0, 0, 0, 0.219);
+    background: rgba(255, 255, 255, 0.39);
     border: solid 0.2px rgba(106, 255, 193, 0);
     border-radius: 1vw;    
     color: rgb(0, 0, 0);
@@ -188,7 +172,17 @@ h1, h2, h3, h5, h6 {
     outline: none;
     transform: translateZ(30px);
 }
-.button{
+.btn-toggle1{
+    font-size: 1vw;
+    cursor: pointer;
+    font-weight: bolder; 
+    background-color: #00000000;
+    color: rgb(0, 0, 0);
+    border: none;
+    outline: none;
+    transform: translateZ(30px);
+}
+.buttton{
     display: inline-block;
     margin-left: 19%; 
     position: relative;
@@ -205,13 +199,11 @@ h1, h2, h3, h5, h6 {
     transform: perspective(1000px);
     border: solid 0.5px rgba(255, 255, 255, 0.192);
 }
-#themeimg{
-    display: none;
-}
+
 .textcolor{
     color: rgb(0, 0, 0);
 }
-.glass:hover, .texxt:hover, .readmore:hover, .texxst:hover{
+.glass:hover, .texxt:hover, .readmore:hover{
     background-color: rgba(255, 255, 255, 0.5);
     border: solid 3px rgba(12, 0, 0, 0.513);
 }
@@ -222,15 +214,14 @@ h1, h2, h3, h5, h6 {
     margin-left: 1vw;
     max-width: fit-content; 
     border-radius: 0.5vw;
-    border: solid 1px #38383849;
+    border: solid 1px #33333300;
     background-color: rgba(85, 85, 85, 0.274);
     color: rgb(0, 0, 0);
     text-align: center;
     max-width: fit-content;
-    margin-left: 41%;
-    margin-bottom: 2vw;
+    margin-left: 59%;
     margin-right: 0%;
     overflow: hidden;
-    font-weight: 600;
+    margin-bottom: 0.5vw;
 }
 #more {display: none;}
