@@ -1,13 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
-
-
-body {
+.glass.dark-theme{
+    background-color: rgba(0, 0, 0, 0.452);
+}
+body{
     margin: 0px;
     padding: 0em;
-    color: rgb(12, 22, 8);
+    color: rgb(0, 0, 0);
     min-height: 100%;
     font-family: 'Montserrat';
 }
+  body.dark-theme {
+    margin: 0px;
+    padding: 0em;
+    color: rgb(0, 0, 0);
+    min-height: 100%;
+    font-family: 'Montserrat';
+}
+  
+@media (prefers-color-scheme: dark) {
+    /* defaults to dark theme */
+    body {
+        margin: 0px;
+        padding: 0em;
+        color: rgb(0, 0, 0);
+        min-height: 100%;
+        font-family: 'Montserrat';
+    }
+    body.light-theme {
+        margin: 0px;
+        padding: 0em;
+        color: rgb(0, 0, 0);
+        min-height: 100%;
+        font-family: 'Montserrat';
+    }
+  }
+
 .main {
     position: fixed;
     top: 0;
@@ -28,9 +55,9 @@ body {
     background-position: center;
 }
 .glass {
-    background: rgba(255, 255, 255, 0.157);
+    background: rgba(255, 255, 255, 0.287);
     box-shadow: 0 10px 16px 0px rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur( 50.0px );
+    backdrop-filter: blur( 35.0px );
     -webkit-backdrop-filter: blur( 10.0px );
     border-radius: 1.85vw;
     border: solid 3px rgba(0, 0, 0, 0);
@@ -66,7 +93,7 @@ body {
 .para {
     font-size: 1.5vw; 
     color: black;
-    text-shadow:0px 2px 12px #00000073;
+    text-shadow:0px 1px 19px #00000073;
 }
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
@@ -78,12 +105,22 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 3vw; 
     text-align: center;
     background: rgba(0, 0, 0, 0.233);
-    border: solid 3px rgba(0, 0, 0, 0);
+    border: solid 0.2px rgba(106, 255, 193, 0);
     border-radius: 1vw;    
     color: black;
     max-width: fit-content;
     padding-left: 1vw;
     padding-right: 1vw;
     box-shadow: 0 5px 16px 0px rgba(0, 0, 0, 0.6);
-
+    transition: 0.04s;
+}
+#glassone:hover,#glasstwo:hover,h3:hover,#glassoriginal:hover,h1:hover{
+    box-shadow: 0 17px 16px 0px rgba(0, 0, 0, 0.6);
+    font-size: 3.2vw;
+}
+.button{
+    border: solid 2.65px #00000000;
+    border-radius: 9px;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 1vw;
 }
