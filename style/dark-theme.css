@@ -163,6 +163,8 @@ h1, h2, h3, h5, h6 {
     outline: none;
     transform: translateZ(30px);
     display: inline;
+    backdrop-filter: blur( 50.0px );
+    -webkit-backdrop-filter: blur( 10.0px );
 }
 .btn-toggle1{
     font-size: 1vw;
