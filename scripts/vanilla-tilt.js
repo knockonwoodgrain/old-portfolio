@@ -10,7 +10,8 @@ var VanillaTilt = (function () {
 
 class VanillaTilt {
   constructor(element, settings = {}) {
-    if (!(element instanceof Node)) {
+    var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+    if (!(element instanceof Node)) && (width>900){
       throw ("Can't initialize VanillaTilt because " + element + " is not a Node.");
     }
 
