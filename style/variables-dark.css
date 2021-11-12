@@ -1,0 +1,15 @@
+:root{
+   --bgcolor-glass:rgba(63, 63, 63, 0.287); 
+   --parashadow:#00000073;
+   --blogbackground:rgba(0, 0, 0, 0.39);
+   --boxshadow:rgba(0, 0, 0, 0.6);
+   --paraborder:rgba(106, 255, 193, 0);
+   --textcolor:rgb(200, 200, 200);
+   --hoverborder:rgba(255, 255, 255, 0.192);
+   --glassborder:rgba(255, 255, 255, 0);
+   --hovercolor:rgba(63, 63, 63, 0.267);
+   --buttonbackground:rgba(0, 0, 0, 0.452);
+   --phonebuttonbackground:rgba(192, 192, 192, 0.609);
+   --readmore:rgba(85, 85, 85, 0.274);
+   --bgimage: url(darkmode.jpg)
+}   
