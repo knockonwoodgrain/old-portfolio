@@ -8,7 +8,11 @@ body{
     color: var(--textcolor);
     min-height: 100%;
     font-family: 'Montserrat';
-    overflow: overlay;
+    overflow:visible;
+    background-image: var(--bgimage);
+    background-position: center;
+    background-size:cover;
+    transition: 1s;
 }
 ::selection{
     background-color: rgba(0, 0, 0, 0.164);
@@ -47,7 +51,7 @@ body{
     bottom: 0;
     height: 100%;
     width: 100%;
-    overflow: scroll;
+    overflow:hidden;
 }
 .overlay {
     background-image: var(--bgimage);
@@ -78,6 +82,7 @@ body{
     width: fit-content; 
     height: fit-content; 
     margin: auto;
+    transition: var(--transition);
     animation-name: fadein;
     animation-duration: 1s;
     animation-iteration-count: 1;
@@ -107,6 +112,9 @@ body{
     text-align: justify;
     text-justify: inter-word;
 }
+#blog{
+    margin-bottom: 3vw;
+}
 h1, h2, h3, h5, h6 {
     margin: 0;
     margin-bottom: 2vh;
@@ -126,9 +134,9 @@ h1, h2, h3, h5, h6 {
     padding-left: 1vw;
     padding-right: 1vw;
     box-shadow: 0 5px 16px 0px var(--boxshadow);
-    transition: 0.04s;
     overflow: hidden;
     -webkit-font-smoothing: antialiased;
+    transition: var(--transition);
 }
 .texxst {
     font-size: 3vw; 
@@ -137,7 +145,6 @@ h1, h2, h3, h5, h6 {
     border-radius: 1vw;    
     color: var(--textcolor);
     box-shadow: 0 5px 16px 0px var(--boxshadow);
-    transition: 0.04s;
     overflow: hidden;
     padding-left: 1vw;
     padding-right: 1vw;
@@ -145,6 +152,7 @@ h1, h2, h3, h5, h6 {
     max-width: fit-content;
     margin-left: 41%;
     margin-right: 45%;
+    transition: var(--transition);
 }
 #glassone:hover,#glasstwo:hover,h3:hover,#glassoriginal:hover,h1:hover{
     box-shadow: 0 17px 16px 0px var(--boxshadow);
@@ -204,10 +212,14 @@ h1, h2, h3, h5, h6 {
     color: var(--textcolor);
     text-align: center;
     max-width: fit-content;
-    margin-left: 35%;
+    margin-left: 33%;
     margin-bottom: 0.5vw;
     margin-right: 0%;
     overflow: hidden;
     font-weight: 600;
 }
-#more {display: none;}
+.more{
+    display: none;
+    font-size: 1.2vw;
+    text-align: justify;
+}

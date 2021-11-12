@@ -9,6 +9,10 @@ body{
     min-height: 100%;
     font-family: 'Montserrat';
     overflow: overlay;
+    background-image: var(--bgimage);
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
 }
 ::selection{
     background-color: rgba(0, 0, 0, 0.164);
@@ -40,34 +44,6 @@ body{
     box-shadow: 1px 10px 10px 0px var(--boxshadow);
 }
 @media (max-width:900px){
-.main {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 100%;
-    width: 100%;
-    overflow: scroll;
-}
-.overlay {
-    background-image: var(--bgimage);
-    min-height: 130%;
-    min-width: 100%;
-    display: block;
-    background-size:cover;
-    position: absolute;
-    background-position: center;
-}
-.overlay1 {
-    background-image: var(--bgimage);
-    min-height: 170%;
-    min-width: 100%;
-    display: block;
-    background-size:cover;
-    position: absolute;
-    background-position: center;
-}
 .glass {
     background: var(--bgcolor-glass);
     box-shadow: 0 10px 16px 0px var(--boxshadow);
@@ -225,11 +201,15 @@ h1, h2, h3, h5, h6 {
     animation-duration: 0.69s;
     animation-iteration-count: 1;
 }
+#blog:hover, #educationblog:hover{
+    animation: none;
+}
 .glass:hover{
     animation-name: scale1;
     animation-duration: 0.69s;
     animation-iteration-count: 1;
 }
+
 @keyframes scale{
     0% {}
     25% {transform: scale(0.69);background: rgba(0, 0, 0, 0);}
@@ -259,5 +239,10 @@ h1, h2, h3, h5, h6 {
     overflow: hidden;
     margin-bottom: 2vw;
     font-weight: 600;
+}
+.more{
+    display: none;
+    font-size: 3vw;
+    text-align: justify;
 }
 }

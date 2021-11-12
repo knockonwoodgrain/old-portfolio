@@ -11,5 +11,6 @@
    --buttonbackground:rgba(0, 0, 0, 0.452);
    --phonebuttonbackground:rgba(192, 192, 192, 0.609);
    --readmore:rgba(85, 85, 85, 0.274);
-   --bgimage: url(darkmode.jpg)
+   --bgimage: url(darkmode.jpg);
+   --transition: 0.3s;
 }   
