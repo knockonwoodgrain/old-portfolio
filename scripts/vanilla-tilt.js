@@ -11,7 +11,6 @@ var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 if (width >= 700) {
     class VanillaTilt {
     constructor(element, settings = {}) {
-        var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
         if (!(element instanceof Node)){
         throw ("Can't initialize VanillaTilt because " + element + " is not a Node.");
         }
@@ -497,18 +496,18 @@ if (width >= 700) {
         });
     }
     }
+
+
+    if (typeof document !== "undefined") {
+    /* expose the class to window */
+    window.VanillaTilt = VanillaTilt;
+
+    /**
+     * Auto load
+     */
+    VanillaTilt.init(document.querySelectorAll("[data-tilt]"));
+    }
 }
-
-if (typeof document !== "undefined") {
-  /* expose the class to window */
-  window.VanillaTilt = VanillaTilt;
-
-  /**
-   * Auto load
-   */
-  VanillaTilt.init(document.querySelectorAll("[data-tilt]"));
-}
-
 return VanillaTilt;
 
 }());

@@ -1,33 +1,24 @@
 const btn = document.querySelector(".btn-toggle");
 const btnn = document.querySelector(".btn-toggle-phone");
 const theme = document.querySelector("#theme-link");
+const device = document.querySelector("#device-link")
 var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 if (width<900){
-  theme.href = "style/dark-theme-phone.css"
+  device.href = "style/phone.css"
 }
 btn.addEventListener("click", function () {
   // Swap out the URL for the different stylesheets
-  if (theme.getAttribute("href") == "style/dark-theme.css") {
-    theme.href = "style/light-theme.css";
-  } else if (theme.getAttribute("href") == "style/dark-theme-phone.css"){
-    theme.href = "style/light-theme-phone.css";
-  }
-  else if (theme.getAttribute("href") == "style/light-theme-phone.css"){
-    theme.href = "style/dark-theme-phone.css"
+  if (theme.getAttribute("href") == "style/variables-dark.css") {
+    theme.href = "style/variables-light.css";
   }
   else {
-    theme.href = "style/dark-theme.css"
+    theme.href = "style/variables-dark.css"
   }
 });
 btnn.addEventListener("click", function () {
   // Swap out the URL for the different stylesheets
-  if (theme.getAttribute("href") == "style/dark-theme.css") {
-    theme.href = "style/light-theme.css";
-  } else if (theme.getAttribute("href") == "style/dark-theme-phone.css"){
-    theme.href = "style/light-theme-phone.css";
-  }
-  else if (theme.getAttribute("href") == "style/light-theme-phone.css"){
-    theme.href = "style/dark-theme-phone.css"
+  if (theme.getAttribute("href") == "style/variables-dark.css") {
+    theme.href = "style/variables-light.css";
   }
 });
 
