@@ -8,7 +8,7 @@ var VanillaTilt = (function () {
  * Version 1.7.2
  */
 var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-if (width<900){
+if (width >= 700) {
     class VanillaTilt {
     constructor(element, settings = {}) {
         var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
