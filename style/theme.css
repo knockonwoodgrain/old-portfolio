@@ -21,7 +21,7 @@ body{
 ::-webkit-scrollbar-track
 {
 	border-radius: 10px;
-	background-color: #bdbdbd55;
+	background-color: #000000;
     border: solid 1px rgba(255, 255, 255, 0.39);
     box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
