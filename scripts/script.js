@@ -19,6 +19,8 @@ btnn.addEventListener("click", function () {
   // Swap out the URL for the different stylesheets
   if (theme.getAttribute("href") == "style/variables-dark.css") {
     theme.href = "style/variables-light.css";
+  }else {
+    theme.href = "style/variables-dark.css"
   }
 })
 $( "#myBtn" ).click(function() {

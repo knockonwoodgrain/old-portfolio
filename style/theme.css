@@ -12,7 +12,7 @@ body{
     background-image: var(--bgimage);
     background-position: center;
     background-size:cover;
-    transition: 1s;
+    transition: 2s;
 }
 ::selection{
     background-color: rgba(0, 0, 0, 0.164);
@@ -204,6 +204,9 @@ h1, h2, h3, h5, h6 {
     transform-style: preserve-3d;
     transform: perspective(1000px);
     border: solid 0.5px var(--hoverborder);
+}
+#indexbutton{
+    display: inline-table; text-align:end;display:flex;position: absolute;left: 46%;
 }
 .leftblog, .rightblog{
     max-width: 47%;
