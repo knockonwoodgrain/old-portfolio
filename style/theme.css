@@ -100,10 +100,12 @@ body{
     font-size: 1.5vw; 
     color: var(--textcolor);
     text-shadow:0px 1px 19px var(--parashadow);
+    text-align: left;
     transform: translate3d(20px);
     -webkit-font-smoothing: antialiased;
 }
 .blog {
+    display: inherit;
     font-size: 1.15vw; 
     color: var(--textcolor);
     text-shadow:0px 1px 19px var(--parashadow);
@@ -111,6 +113,16 @@ body{
     -webkit-font-smoothing: antialiased;
     text-align: justify;
     text-justify: inter-word;
+    padding-bottom: 0;
+}
+.blogbox{
+    margin: 0 auto;
+}
+.blogheading{
+    margin-top: 0;
+    margin-bottom: 1vw;
+    font-size: 2.7vw;
+    font-weight: 600;
 }
 #blog{
     margin-bottom: 3vw;
@@ -122,7 +134,11 @@ h1, h2, h3, h5, h6 {
     position: relative;
     -webkit-font-smoothing: antialiased;
 }
-
+#educationblog, #FOSSblog{
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 0;
+}
 .texxt {
     font-size: 3vw; 
     text-align: center;
@@ -149,11 +165,10 @@ h1, h2, h3, h5, h6 {
     padding-left: 1vw;
     padding-right: 1vw;
     text-align: center;
-    max-width: fit-content;
-    margin-left: 41%;
-    margin-right: 45%;
+    max-width: max-content;
     transition: var(--transition);
 }
+
 #glassone:hover,#glasstwo:hover,h3:hover,#glassoriginal:hover,h1:hover{
     box-shadow: 0 17px 16px 0px var(--boxshadow);
 }
@@ -177,9 +192,9 @@ h1, h2, h3, h5, h6 {
     display: none;
 }
 .buttton{
-    display: inline-block;
-    margin-left: 19%; 
-    position: relative;
+    display:flex;
+    position: absolute;
+    left: 46%;
     outline: none;
     cursor: pointer;
     padding: 0.69vw;
@@ -193,8 +208,12 @@ h1, h2, h3, h5, h6 {
     transform: perspective(1000px);
     border: solid 0.5px var(--hoverborder);
 }
+.leftblog, .rightblog{
+    max-width: 47%;
+}
 .textcolor{
     color: var(--textcolor);
+    text-decoration: none;
 }
 .glass:hover, .texxt:hover, .texxst:hover{
     background-color: var(--hovercolor);
@@ -212,14 +231,14 @@ h1, h2, h3, h5, h6 {
     color: var(--textcolor);
     text-align: center;
     max-width: fit-content;
-    margin-left: 33%;
+    float: right;
     margin-bottom: 0.5vw;
     margin-right: 0%;
     overflow: hidden;
     font-weight: 600;
 }
 #FOSSbutton{
-    margin-left: 33%;
+    float: right;
     margin-right: 0%;
 }
 .more{
