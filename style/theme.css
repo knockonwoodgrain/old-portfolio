@@ -192,9 +192,6 @@ h1, h2, h3, h5, h6 {
     display: none;
 }
 .buttton{
-    display:flex;
-    position: absolute;
-    left: 46%;
     outline: none;
     cursor: pointer;
     padding: 0.69vw;
