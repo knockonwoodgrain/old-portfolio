@@ -139,7 +139,7 @@ h1, h2, h3, h5, h6 {
     transition: var(--transition);
 }
 .texxst {
-    font-size: 3vw; 
+    font-size: 3vw;
     background: var(--blogbackground);
     border: solid 0.2px var(--paraborder);
     border-radius: 1vw;    
@@ -217,6 +217,10 @@ h1, h2, h3, h5, h6 {
     margin-right: 0%;
     overflow: hidden;
     font-weight: 600;
+}
+#FOSSbutton{
+    margin-left: 33%;
+    margin-right: 0%;
 }
 .more{
     display: none;
