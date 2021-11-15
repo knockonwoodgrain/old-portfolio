@@ -22,7 +22,18 @@ btnn.addEventListener("click", function () {
   }
 })
 $( "#myBtn" ).click(function() {
-  $( ".more" ).slideToggle("slow");
+  $( "#edumore" ).slideToggle("slow");
+  var $this = $(this);
+        $this.toggleClass("open");
+
+        if ($this.hasClass("open")) {
+            $this.html("Read Less");
+        } else {
+            $this.html("Read more");
+        }      
+});
+$( "#FOSSbutton" ).click(function() {
+  $( "#FOSSmore" ).slideToggle("slow");
   var $this = $(this);
         $this.toggleClass("open");
 
