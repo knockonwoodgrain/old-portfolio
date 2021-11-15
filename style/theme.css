@@ -138,6 +138,12 @@ h1, h2, h3, h5, h6 {
     margin-left: 0;
     margin-right: 0;
     padding-bottom: 0;
+    border: solid 3px rgba(0, 0, 0, 0);
+    transition:0.7s;
+}
+#educationblog:hover, #FOSSblog:hover{
+    border: solid 3px var(--hoverborder);
+    border-radius: 1.5vw;
 }
 .texxt {
     font-size: 3vw; 
@@ -150,18 +156,14 @@ h1, h2, h3, h5, h6 {
     padding-left: 1vw;
     padding-right: 1vw;
     box-shadow: 0 5px 16px 0px var(--boxshadow);
-    overflow: hidden;
-    -webkit-font-smoothing: antialiased;
-    transition: var(--transition);
 }
 .texxst {
     font-size: 3vw;
     background: var(--blogbackground);
     border: solid 0.2px var(--paraborder);
-    border-radius: 1vw;    
+    border-radius: 1vw;
     color: var(--textcolor);
     box-shadow: 0 5px 16px 0px var(--boxshadow);
-    overflow: hidden;
     padding-left: 1vw;
     padding-right: 1vw;
     text-align: center;
@@ -182,8 +184,6 @@ h1, h2, h3, h5, h6 {
     outline: none;
     transform: translateZ(30px);
     display: inline;
-    backdrop-filter: blur( 50.0px );
-    -webkit-backdrop-filter: blur( 10.0px );
 }
 #themeimage{
     display: none;
@@ -215,9 +215,24 @@ h1, h2, h3, h5, h6 {
     color: var(--textcolor);
     text-decoration: none;
 }
+.linkcolor{
+    color: var(--textcolor);
+}
 .glass:hover, .texxt:hover, .texxst:hover{
     background-color: var(--hovercolor);
     border: solid 3px var(--hoverborder);
+}
+.glass:hover{
+    border-radius: 2.5vw;
+}
+.texxt:hover{
+    border-radius: 1.5vw;
+}
+.texxst:hover{
+    border-radius: 2vw;
+}
+#Blogs:hover{
+    border-radius: 1vw;
 }
 .readmore{
     padding: 0.2vw;
