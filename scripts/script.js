@@ -23,7 +23,7 @@ btnn.addEventListener("click", function () {
     theme.href = "style/variables-dark.css"
   }
 })
-$( "#myBtn" ).click(function() {
+$( "#edubutton" ).click(function() {
   $( "#edumore" ).slideToggle("slow");
   var $this = $(this);
         $this.toggleClass("open");
