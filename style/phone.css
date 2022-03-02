@@ -8,7 +8,7 @@ body{
     padding: 0em;
     color: rgb(216, 216, 216);
     min-height: 100%;
-    font-family: 'Roboto', 'sans-serif';
+    font-family: 'Nunito', 'sans-serif';
     overflow: overlay;
     background-image: var(--bgimage);
     background-position: center;
