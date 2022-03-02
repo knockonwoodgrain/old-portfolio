@@ -130,6 +130,7 @@ body{margin: 0px;
         text-align: left;
         -webkit-font-smoothing: antialiased;}
     #stats{width: 8vw;}
+    #socialheading{margin-left: 0.01vw; margin-right: 0.01vw;}
     /*-----------------------------------------------------------------------------*/
     /*Blog-------------------------------------------------------------------------*/
     .texxst {max-width: max-content;
