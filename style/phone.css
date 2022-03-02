@@ -13,8 +13,8 @@ body{
     background-image: var(--bgimage);
     background-position: center;
     background-size:cover;
-    background-attachment: fixed;
-    transition: 1.5s;}
+    background-attachment:fixed;
+    text-align: center;}
     .textcolor {
         color: var(--textcolor);}
     .linkcolor{
@@ -88,22 +88,22 @@ body{
 /*Glass ------------------------------------------------------------------------------------------------------*/
 @media (max-width:900px){
 .glass {padding: 1.5vw;
-    width: fit-content; 
     height: fit-content; 
-    margin: auto;
+    margin: 0px;
     background: var(--bgcolor-glass);
     box-shadow: 0 10px 16px 0px var(--boxshadow);
-    border-radius: 3vw;
+    border-radius: 0vw;
     border: solid 3px rgba(255, 255, 255, 0);
     border: solid 1.69px rgba(78, 78, 78, 0.192);
-    backdrop-filter: blur( 50.0px );-webkit-backdrop-filter: blur( 10.0px );
+    backdrop-filter: blur( 30.0px );-webkit-backdrop-filter: blur( 10.0px );
     z-index: 99;
-    text-align: center;}
+    text-align: justify;}
     #socialmedia{min-width: 100%; margin-left: 0; margin-right: 0;}
-    #glassone, #glasstwo {min-width: 41.5%; display: inline-block; margin-bottom: 2vw;}
-    #glassone{ margin-left: 4vw;}
-    #glasstwo {margin-right: 2vw; padding-bottom: 5vw;}
-    #glassoriginal, #blog {margin-bottom: 4vw; position:relative; max-width: 88%;padding-right: 2vw;padding-left: 2vw;}
+    #glassone, #glasstwo {min-width: 45%; display: inline-block; margin-bottom: 2vw;max-width: fit-content;border-radius: 3vw;max-height:5vw;min-height: 5vw; height: 5vw;}
+    #glassone{ margin-left: 0vw; border-bottom-left-radius: 0; border-top-left-radius:0;}
+    #glasstwo {margin-right: 0vw; border-bottom-right-radius: 0; border-top-right-radius:0;}
+    #glassoriginal {margin-bottom: 4vw; position:relative;padding-right: 2vw;padding-left: 2vw;}
+    #blog {margin-bottom: 4vw; position:relative;padding-right: 0px; padding-left: 0px;border: 0px;}
     /*------------------------------------------------------------------------------------------------------------------------*/
     
     /*Normal Glass Boxes------------------------------------------------------------------------------------------------------*/
@@ -125,6 +125,8 @@ body{
         overflow: hidden;
         -webkit-font-smoothing: antialiased;}
     .para {font-size: 4vw;
+        height: 27vw;
+        text-align:justify;
         color: var(--textcolor);
         text-shadow:0px 1px 19px var(--parashadow);
         transform: translate3d(20px);
@@ -153,29 +155,27 @@ body{
                 text-shadow:0px 1px 19px var(--parashadow);
                 transform: translate3d(20px);
                 -webkit-font-smoothing: antialiased;
-                font-size: 4vw;
+                font-size: 5vw;
                 text-align: justify;
                 text-justify: inter-word;}
             .blogbox{margin-bottom: 2vw;}
-            .blogheading{margin-top: 0; margin-bottom: 1vw; font-size: 5vw;}
+            .blogheading{margin-top: 0; margin-bottom: 1vw; font-size: 7vw;}
             /*Blog Text------------------------------------------------------------------------------------------------------*/
-            #blog {margin-top: 4vw; margin-bottom: 4vw;}
-            #educationblog, #FOSSblog{margin-left: 1vw;  margin-right:1vw ;}
+            #blog {margin-top: 4vw; margin-bottom: 4vw;min-width: fit-content;}
+            #educationblog, #FOSSblog{margin-left: 0px;  margin-right:0px ; border-right: 0px;border-left: 0px; border-radius: 0px;background-color: #0000009a;}
             .leftblog, .rightblog{max-width: 100%; margin-right: 1vw; margin-left: 1vw;}
-            .more{display: none; font-size: 4vw; text-align: justify;}
+            .more{display: none; font-size: 5vw; text-align: justify;}
             #more {display: none;}
             /*Read More Button------------------------------------------------------------------------------------------------------*/
             .readmore{padding: 1.1vw;
-                padding-bottom: 1.5vw;
-                margin-left: 1vw;
-                margin-bottom: 2vw;
-                margin-right: 0;
+                float: right;
+                margin:1.5vw;
                 max-width: fit-content;
                 max-width: fit-content;
                 position: relative;
                 font-size: 2.5vw;
                 font-weight: 600;
-                color: var(--textcolor);
+                color: var(--readmore-text);
                 text-align: center;
                 background-color: var(--readmore);
                 border-radius: 1.5vw;

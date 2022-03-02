@@ -10,7 +10,8 @@
    --hovercolor:rgba(63, 63, 63, 0.267);
    --buttonbackground:rgba(0, 0, 0, 0.452);
    --phonebuttonbackground:rgba(192, 192, 192, 0.609);
-   --readmore:rgba(85, 85, 85, 0.274);
+   --readmore:rgba(255, 255, 255, 0.623);
+   --readmore-text: rgb(0,0,0);
    --bgimage: url(darkmode.jpg);
    --transition: 0.4s;
 }   
