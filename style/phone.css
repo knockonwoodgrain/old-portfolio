@@ -3,6 +3,7 @@
 .glass.dark-theme{
     background-color: rgba(0, 0, 0, 0.452);
 }
+ * {box-sizing:border-box;}
 body{
     margin: 0px;
     padding: 0em;
@@ -17,7 +18,8 @@ body{
     text-align: center;
     transition: 1s;}
     .textcolor {
-        color: var(--textcolor);}
+        color: var(--textcolor);
+	flex-direction:column;}
     .linkcolor{
         color: var(--textcolor);}
     h1, h2, h3, h5, h6 {
@@ -89,6 +91,8 @@ body{
 /*Glass ------------------------------------------------------------------------------------------------------*/
 @media (max-width:900px){
 .glass {padding: 1.5vw;
+    display: flex;
+    flex-direction:column;
     height: fit-content; 
     margin: 0px;
     background: var(--bgcolor-glass);
@@ -100,7 +104,7 @@ body{
     z-index: 99;
     text-align: justify;}
     #socialmedia{min-width: 100%; margin-left: 0; margin-right: 0;}
-    #glassone, #glasstwo {min-width: 45%; display: inline-block; margin-bottom: 2vw;max-width: fit-content;border-radius: 5vw;max-height:5vw;min-height: 5vw; height: 5vw;}
+    #glassone, #glasstwo {display: flex; align-items:center; justify-content:center; margin-bottom: 2vw;border-radius: 5vw;padding-right:3vw;padding-left:3vw;}
     #glassone{ margin-left: 0vw; border-bottom-left-radius: 0; border-top-left-radius:0;}
     #glasstwo {margin-right: 0vw; border-bottom-right-radius: 0; border-top-right-radius:0;}
     #glassoriginal {margin-bottom: 4vw; position:relative;padding-right: 2vw;padding-left: 2vw;}
@@ -109,14 +113,12 @@ body{
     
     /*Normal Glass Boxes------------------------------------------------------------------------------------------------------*/
     .texxt {min-width: fit-content;
-        width: 30vw;
         padding-left: 3vw;
         padding-right: 3vw;
         padding-top: 1vw;
         padding-bottom: 1vw;
-        margin-top: 1vw;
-        margin-bottom: 1vw;
-        margin: auto;
+	margin:1vw;
+	margin-bottom:0vw;
         font-size:5vw;
         text-align: center;
         color: var(--textcolor);
@@ -130,7 +132,7 @@ body{
     #stats{width: 13vw;}
     #parth{width: 13vw}
     .para {font-size: 4vw;
-        height: 27vw;
+	height:fit-content;
         text-align:justify;
         color: var(--textcolor);
         text-shadow:0px 1px 19px var(--parashadow);
@@ -167,7 +169,7 @@ body{
             .blogheadingin{margin-top: 0; margin-bottom: 1vw; font-size: 5.3vw; font-weight: 500;}
             .blogheadingbl{margin-top: 0; margin-bottom: 1vw; font-size: 7vw;}
             /*Blog Text------------------------------------------------------------------------------------------------------*/
-            #blog {margin-top: 4vw; margin-bottom: 4vw;min-width: fit-content;}
+            #blog {margin-bottom: 4vw;min-width: fit-content;}
             #blogindex{font-size: 4vw;}
             #educationblog, #FOSSblog{margin-left: 0px;  margin-right:0px ; border-right: 0px;border-left: 0px; border-radius: 0px;background-color: #0000009a;}
             .leftblog, .rightblog{max-width: 100%; margin-right: 1vw; margin-left: 1vw;}
@@ -204,5 +206,5 @@ body{
     0% {}
     25% {transform: scale(0.87);background: rgba(0, 0, 0, 0);}
     75% {transform: scale(1.069);}
-    100% {}}}
+    100% {}}
 /*-------------------------------------------------------------------------------*/

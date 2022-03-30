@@ -3,6 +3,9 @@
 .glass.dark-theme{
     background-color: rgba(0, 0, 0, 0.452);
 }
+ * {
+  box-sizing: border-box;
+}
 body{margin: 0px;
     padding: 0em;
     min-height: 100%;
@@ -15,7 +18,8 @@ body{margin: 0px;
     background-attachment: fixed;
     transition: 0.1s;}
     .textcolor{color: var(--textcolor);
-        text-decoration: none;}
+        text-decoration: none;
+	flex-direction:row;}
     .linkcolor{color: var(--textcolor);}
     .hr {border-radius: 0.2vw;
         border: solid 7px rgba(0, 0, 0, 0.5);}
@@ -94,7 +98,9 @@ body{margin: 0px;
 
 
 /*------------------------------------------------------------------------------------------------------*/
-.glass {padding: 1.5vw;
+.glass {padding: 1.0vw;
+    display:flex;
+    flex-direction:column;
     width: fit-content; 
     height: fit-content; 
     margin: 3.5vw;
@@ -106,15 +112,18 @@ body{margin: 0px;
     border-radius: 1.85vw;
     border: solid 3px var(--glassborder);
     transition: var(--transition);
-    animation-name: fadein;
+    animation-name: fadeinglass;
     animation-duration: 1s;
     animation-iteration-count: 1;
+    justify-content:center;
     text-align: center;
     align-items: center;}
     #glassoriginal{margin-bottom: 2vw;}
+    #glassone{float:left;}#glasstwo{float:right;}
     /*Normal Glass Boxes-------------------------------------------------------------*/
-    .texxt {max-width: 9vw;
-        margin: auto;
+    .texxt {min-width:fit-content; 
+	margin-bottom:0;
+	max-width:fit-content;
         padding-left: 1vw;
         padding-right: 1vw;
         font-size: 3vw; 
@@ -125,9 +134,10 @@ body{margin: 0px;
         border-radius: 1vw;  
         border: solid 0.2px var(--paraborder);  }
     .para {font-size: 1.5vw; 
+	margin-top:1vw;margin-bottom:1vw;
         color: var(--textcolor);
         text-shadow:0px 1px 19px var(--parashadow);
-        text-align: left;
+        text-align:justify ;
         -webkit-font-smoothing: antialiased;}
     #stats{width: 8vw;}
     #socialheading{margin-left: 0.01vw; margin-right: 0.01vw;}
@@ -146,13 +156,13 @@ body{margin: 0px;
         transition: var(--transition);}
         .blog {display: inherit;
             padding-bottom: 0;
-            font-size: 1.15vw; 
+            font-size: 1.2vw; 
             color: var(--textcolor);
             text-shadow:0px 1px 19px var(--parashadow);
             text-align: justify;
             text-justify: inter-word;
             transform: translate3d(20px);-webkit-font-smoothing: antialiased;}
-        .blogbox{margin: 0 auto;}
+        .blogbox{margin:0.5vw;}
         .blogheading{margin-top: 0;
             margin-bottom: 1vw;
             font-size: 2.7vw;
@@ -165,18 +175,19 @@ body{margin: 0px;
         }
     .blogheadingin{
             margin-top: 0;
-            margin-bottom: 1vw;
+            margin-bottom: 0.5vw;
             font-size: 2.7vw;
             font-weight: 600;
         }
         /*Blog Text------------------------------------------------------------------------------*/
-        #blog{margin-bottom: 3vw; min-width: 90%;}
+        #blog{margin-bottom: 3vw; min-width: 90%;display:flex;flex-direction:row;align-items:center;justify-items:center;}
             #educationblog, #FOSSblog{margin-left: 0;
                 margin-right: 0;
                 padding-bottom: 0;
                 border: solid 3px rgba(0, 0, 0, 0);
                 transition:0.7s;}
-            .leftblog, .rightblog{max-width: 47%; margin-right: 0; margin-left: 0;}
+            .leftblog, .rightblog{max-width:50%;}
+	    .leftblog{margin-left:0;}.rightblog{margin-right:0;}
             .more{display: none;
                 font-size: 1.2vw;
                 text-align: justify;}
@@ -210,7 +221,7 @@ body{margin: 0px;
         .texxst:hover{border-radius: 2vw;}
             #Blogs:hover{border-radius: 1vw;}
             #educationblog:hover, #FOSSblog:hover{border: solid 3px var(--hoverborder);border-radius: 1.5vw;}
-@keyframes fadein{
+@keyframes fadeinglass{
     0% {transform: translateY(4vw);}
     100% {transform: translateY(0);}}
 /*-----------------------------------------------------------------------------------------*/
