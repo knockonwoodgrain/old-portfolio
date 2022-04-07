@@ -3,10 +3,12 @@
 .glass.dark-theme{
     background-color: rgba(0, 0, 0, 0.452);
 }
- * {
-  box-sizing: border-box;
-}
+* {box-sizing:border-box;justify-content:center;
+    text-align: center;
+    align-items: center;}
 body{margin: 0px;
+    display: flex;
+    flex-direction: column;
     padding: 0em;
     min-height: 100%;
     color: var(--textcolor);
@@ -142,6 +144,9 @@ body{margin: 0px;
     #stats{width: 8vw;}
     #socialheading{margin-left: 0.01vw; margin-right: 0.01vw;}
     /*-----------------------------------------------------------------------------*/
+    /*Gallery----------------------------------------------------------------------*/
+    #gallery{margin-bottom: 2vw; max-width: fit-content;display:flex;flex-direction:row;flex-wrap: wrap; align-items:center;justify-items:center;}
+    .image{display: flex; flex-wrap: wrap; height: 24vw; border-radius: 2vw; box-shadow: 0 5px 16px 0px var(--boxshadow);border: solid 3px var(--hoverborder); transition: var(--transition); }
     /*Blog-------------------------------------------------------------------------*/
     .texxst {max-width: max-content;
         padding-left: 1vw;
@@ -180,7 +185,7 @@ body{margin: 0px;
             font-weight: 600;
         }
         /*Blog Text------------------------------------------------------------------------------*/
-        #blog{margin-bottom: 3vw; min-width: 90%;display:flex;flex-direction:row;align-items:center;justify-items:center;}
+        #blog{margin-bottom: 2vw; min-width: 90%;display:flex;flex-direction:row;align-items:center;justify-items:center;}
             #educationblog, #FOSSblog{margin-left: 0;
                 margin-right: 0;
                 padding-bottom: 0;
@@ -215,6 +220,7 @@ body{margin: 0px;
 /*Hover Animations----------------------------------------------------------------------*/
 .glass:hover, .texxt:hover, .texxst:hover{background-color: var(--hovercolor);
     border: solid 3px var(--hoverborder);}
+.image:hover{border-radius: 3vw; border: solid 3px var(--glassborder);}
     #glassone:hover,#glasstwo:hover,h3:hover,#glassoriginal:hover,h1:hover{box-shadow: 0 17px 16px 0px var(--boxshadow);}
         .glass:hover{border-radius: 2.5vw;}
         .texxt:hover{border-radius: 1.5vw;}
