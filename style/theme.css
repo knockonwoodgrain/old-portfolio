@@ -3,7 +3,6 @@
 .glass.dark-theme{
     background-color: rgba(0, 0, 0, 0.452);
 }
-<<<<<<< HEAD
 .material-symbols-rounded {
   font-variation-settings:
   'FILL' 1,
@@ -11,8 +10,6 @@
   'GRAD' 0,
   'opsz' 48
 }
-=======
->>>>>>> b4ac36c1a2dba312523f914d2d0d02e162b70c7a
 * {box-sizing:border-box;justify-content:center;
     text-align: center;
     align-items: center;}
@@ -156,11 +153,8 @@ body{margin: 0px;
     /*-----------------------------------------------------------------------------*/
     /*Gallery----------------------------------------------------------------------*/
     #gallery{margin-bottom: 2vw; max-width: fit-content;display:flex;flex-direction:row;flex-wrap: wrap; align-items:center;justify-items:center;}
-<<<<<<< HEAD
     .image{display: flex; flex-wrap: wrap; height: 24vw; border-radius: 2vw; box-shadow: 0 5px 16px 0px var(--boxshadow);border: solid 3px var(--imageborder); transition: var(--transition); }
-=======
     .image{display: flex; flex-wrap: wrap; height: 24vw; border-radius: 2vw; box-shadow: 0 5px 16px 0px var(--boxshadow);border: solid 3px var(--hoverborder); transition: var(--transition); }
->>>>>>> b4ac36c1a2dba312523f914d2d0d02e162b70c7a
     /*Blog-------------------------------------------------------------------------*/
     .texxst {max-width: max-content;
         padding-left: 1vw;
@@ -239,12 +233,9 @@ body{margin: 0px;
 /*Hover Animations----------------------------------------------------------------------*/
 .texxt:hover{background-color: var(--hoverlight);
     border: solid 3px var(--hoverborder);}
-<<<<<<< HEAD
 .glass:hover{background-color: var(--hovercolor);border: solid 3px var(--hoverborder);}
 .image:hover{border-radius: 3vw; border: solid 3px var(--hoverborder);}
-=======
 .image:hover{border-radius: 3vw; border: solid 3px var(--glassborder);}
->>>>>>> b4ac36c1a2dba312523f914d2d0d02e162b70c7a
     #glassone:hover,#glasstwo:hover,h3:hover,#glassoriginal:hover,h1:hover{box-shadow: 0 17px 16px 0px var(--boxshadow);}
         .glass:hover{border-radius: 2.5vw;}
         .texxt:hover{border-radius: 5vw;}
