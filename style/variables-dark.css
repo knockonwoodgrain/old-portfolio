@@ -13,10 +13,7 @@
    --phonebuttonbackground:rgba(192, 192, 192, 0.609);
    --readmore:rgba(255, 255, 255, 0.623);
    --readmore-text: rgb(0,0,0);
-<<<<<<< HEAD
    --imageborder:var(--hoverborder);
-=======
->>>>>>> b4ac36c1a2dba312523f914d2d0d02e162b70c7a
    --bgimage: url(https://media.discordapp.net/attachments/794971234030059541/962003775961321622/NIght.png);
    --transition: 0.1s;
 }      
