@@ -154,7 +154,6 @@ body{margin: 0px;
     /*Gallery----------------------------------------------------------------------*/
     #gallery{margin-bottom: 2vw; max-width: fit-content;display:flex;flex-direction:row;flex-wrap: wrap; align-items:center;justify-items:center;}
     .image{display: flex; flex-wrap: wrap; height: 24vw; border-radius: 2vw; box-shadow: 0 5px 16px 0px var(--boxshadow);border: solid 3px var(--imageborder); transition: var(--transition); }
-    .image{display: flex; flex-wrap: wrap; height: 24vw; border-radius: 2vw; box-shadow: 0 5px 16px 0px var(--boxshadow);border: solid 3px var(--hoverborder); transition: var(--transition); }
     /*Blog-------------------------------------------------------------------------*/
     .texxst {max-width: max-content;
         padding-left: 1vw;
@@ -235,7 +234,6 @@ body{margin: 0px;
     border: solid 3px var(--hoverborder);}
 .glass:hover{background-color: var(--hovercolor);border: solid 3px var(--hoverborder);}
 .image:hover{border-radius: 3vw; border: solid 3px var(--hoverborder);}
-.image:hover{border-radius: 3vw; border: solid 3px var(--glassborder);}
     #glassone:hover,#glasstwo:hover,h3:hover,#glassoriginal:hover,h1:hover{box-shadow: 0 17px 16px 0px var(--boxshadow);}
         .glass:hover{border-radius: 2.5vw;}
         .texxt:hover{border-radius: 5vw;}
