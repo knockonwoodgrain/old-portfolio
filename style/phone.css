@@ -172,7 +172,7 @@ body{
             .blogheadingbl{margin-top: 0; margin-bottom: 1vw; font-size: 7vw;color: var(--paracolor);text-align: left;}
             /*Blog Text------------------------------------------------------------------------------------------------------*/
             #blog {margin-bottom: 4vw;min-width: fit-content;}
-            #blogindex{font-size: 4vw;}
+            #blogindex{font-size: 4vw;color: var(--textcolor);}
             #educationblog, #FOSSblog{margin-left: 0px;  margin-right:0px ; border-right: 0px;border-left: 0px; border-radius: 0px;background-color: var(--blogbox)}
             .leftblog, .rightblog{max-width: 100%; margin-right: 2vw; margin-left: 2vw;border-radius: 5vw;}
             .more{display: none; font-size: 5vw; text-align: justify;color: var(--paracolor);}
