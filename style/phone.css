@@ -3,16 +3,13 @@
 .glass.dark-theme{
     background-color: rgba(0, 0, 0, 0.452);
 }
-<<<<<<< HEAD
 .material-symbols-rounded {
   font-variation-settings:
   'FILL' 1,
   'wght' 300,
   'GRAD' 0,
   'opsz' 48
-}
-=======
->>>>>>> b4ac36c1a2dba312523f914d2d0d02e162b70c7a
+} 
  * {box-sizing:border-box;justify-content:center;
     text-align: center;
     align-items: center;}
@@ -176,15 +173,12 @@ body{
             /*Blog Text------------------------------------------------------------------------------------------------------*/
             #blog {margin-bottom: 4vw;min-width: fit-content;}
             #blogindex{font-size: 4vw;}
-<<<<<<< HEAD
             #educationblog, #FOSSblog{margin-left: 0px;  margin-right:0px ; border-right: 0px;border-left: 0px; border-radius: 0px;background-color: var(--blogbox)}
             .leftblog, .rightblog{max-width: 100%; margin-right: 2vw; margin-left: 2vw;border-radius: 5vw;}
             .more{display: none; font-size: 5vw; text-align: justify;color: var(--paracolor);}
-=======
             #educationblog, #FOSSblog{margin-left: 0px;  margin-right:0px ; border-right: 0px;border-left: 0px; border-radius: 0px;background-color: #0000009a;}
             .leftblog, .rightblog{max-width: 100%; margin-right: 2vw; margin-left: 2vw;}
             .more{display: none; font-size: 5vw; text-align: justify;}
->>>>>>> b4ac36c1a2dba312523f914d2d0d02e162b70c7a
             #more {display: none;}
             /*Read More Button------------------------------------------------------------------------------------------------------*/
             .readmore{padding: 1.1vw;
@@ -214,11 +208,8 @@ body{
     100% {}}
 @keyframes scale1{
     0% {}
-<<<<<<< HEAD
     50% {transform: scale(1.1);background: rgba(0, 0, 0, 0);}
-=======
     25% {transform: scale(0.87);background: rgba(0, 0, 0, 0);}
     75% {transform: scale(1.069);}
->>>>>>> b4ac36c1a2dba312523f914d2d0d02e162b70c7a
     100% {}}}
 /*-------------------------------------------------------------------------------*/
