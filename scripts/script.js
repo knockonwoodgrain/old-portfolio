@@ -11,18 +11,13 @@ btn.addEventListener("click", function () {
   if (theme.getAttribute("href") == "style/variables-dark.css") {
     theme.href = "style/variables-light.css";
   }
-  else {
-    theme.href = "style/variables-dark.css"
+  else if (theme.getAttribute("href") == "style/variables-light.css"){
+    theme.href = "style/variables-you.css"
+  }
+  else if (theme.getAttribute("href") == "style/variables-you.css"){
+   theme.href = "style/variables-dark.css"
   }
 });
-btnn.addEventListener("click", function () {
-  // Swap out the URL for the different stylesheets
-  if (theme.getAttribute("href") == "style/variables-dark.css") {
-    theme.href = "style/variables-light.css";
-  }else {
-    theme.href = "style/variables-dark.css"
-  }
-})
 $( "#edubutton" ).click(function() {
   $( "#edumore" ).slideToggle("slow");
   var $this = $(this);
