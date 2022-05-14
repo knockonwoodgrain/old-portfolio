@@ -1,0 +1,21 @@
+:root{
+   --bgcolor-glass:#1a1c17; 
+   --parashadow:#00000073;
+   --blogbackground:#add284;
+   --blogbox:#272a21;
+   --boxshadow:rgba(0, 0, 0, 0.6);
+   --paraborder:rgba(106, 255, 193, 0);
+   --textcolor:#1c3700;
+   --paracolor:#dce7c9;
+   --hoverborder:#aed2844d;
+   --hoverlight:#dce7c9;
+   --glassborder:#1a1c17;
+   --hovercolor:#22251e;
+   --buttonbackground:#add284;
+   --phonebuttonbackground:rgba(192, 192, 192, 0.609);
+   --readmore:#aed284d0;
+   --readmore-text: #1c3700;
+   --imageborder:#add284;
+   --bgimage: url(GreenStuff.jpg);
+   --transition: 0.2s;
+}
