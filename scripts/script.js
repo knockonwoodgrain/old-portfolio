@@ -25,8 +25,10 @@ $( "#edubutton" ).click(function() {
 
         if ($this.hasClass("open")) {
             $this.html("Read Less");
+            $( "#educationblog" ).removeClass( "reading" );
         } else {
             $this.html("Read more");
+            $( "#educationblog" ).addClass( "reading" );
         }      
 });
 $( "#FOSSbutton" ).click(function() {
@@ -36,8 +38,10 @@ $( "#FOSSbutton" ).click(function() {
 
         if ($this.hasClass("open")) {
             $this.html("Read Less");
+            $( "#FOSSblog" ).removeClass( "reading" );
         } else {
             $this.html("Read more");
+            $( "#FOSSblog" ).addClass( "reading" );
         }
 });
 document.getElementById("body").onscroll = function myFunction() {  

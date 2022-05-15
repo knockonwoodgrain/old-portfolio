@@ -167,7 +167,19 @@ body{margin: 0px;
         border: solid 0.2px var(--paraborder);
         transition: var(--transition);
         overflow: hidden;}
-        #Blogs{background: var(--blogbackground);}
+    #FOSSblog,#educationblog {max-width: max-content;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        text-align: center;
+        font-size: 3vw;
+        color: var(--textcolor);
+        background:var(--blogbox); 
+        box-shadow: 0 5px 16px 0px var(--boxshadow);
+        border-radius: 1.5vw;
+        border: solid 0.2px var(--paraborder);
+        transition: var(--transition);
+        overflow: hidden;}    
+        #Blogs{background: var(--blogbackground);margin-top: 0;}
         .blog {display: inherit;
             padding-bottom: 0;
             font-size: 1.2vw; 
@@ -177,6 +189,7 @@ body{margin: 0px;
             text-justify: inter-word;
             transform: translate3d(20px);-webkit-font-smoothing: antialiased;}
         .blogbox{margin:0.5vw;}
+        .headingbutton{display: flex;flex-direction: row;justify-content: space-between;align-items: flex-start;}
         .blogheading{margin-top: 0;
             margin-bottom: 1vw;
             font-size: 2.7vw;
@@ -188,6 +201,7 @@ body{margin: 0px;
             font-size: 2.7vw;
             font-weight: 600;
             color: var(--paracolor);
+            max-width: fit-content;
         }
     .blogheadingin{
             margin-top: 0;
@@ -197,12 +211,15 @@ body{margin: 0px;
             color: var(--paracolor);
         }
         /*Blog Text------------------------------------------------------------------------------*/
-        #blog{margin-bottom: 2vw; min-width: 90%;display:flex;flex-direction:row;align-items:center;justify-items:center;}
+        #blog{margin-bottom: 2vw; min-width: 90%;display:flex;flex-direction:row;align-items:center;justify-items:center;border-radius:3vw;padding: 1.5vw;}
             #educationblog, #FOSSblog{margin-left: 0;
                 margin-right: 0;
                 padding-bottom: 0;
                 border: solid 3px rgba(0, 0, 0, 0);
+                border-radius: 2vw;
                 transition:0.7s;}
+            #educationblog{margin-bottom: 1.5vw;}
+            #FOSSblog{margin-bottom: 0;}
             .leftblog, .rightblog{max-width:50%;margin-bottom: 0;border-radius: 2vw;}
 	    .leftblog{margin-left:0;}.rightblog{margin-right:0;}
             .more{display: none;
@@ -212,7 +229,7 @@ body{margin: 0px;
             .readmore{position: relative;
                 margin-left: 1vw;
                 max-width: fit-content; 
-                padding: 0.2vw;
+                padding: 0.8vw;
                 max-width: fit-content;
                 float: right;
                 margin-bottom: 0.5vw;
@@ -222,7 +239,7 @@ body{margin: 0px;
                 font-size: 1.5vw;
                 color: var(--readmore-text);
                 background-color: var(--readmore);
-                border-radius: 0.5vw;
+                border-radius: 1.1vw;
                 border: solid 1px #ffffff00;
                 overflow: hidden;}
                 #FOSSbutton{float: right;margin-right: 0%;} 
@@ -240,6 +257,7 @@ body{margin: 0px;
         .texxst:hover{border-radius: 3vw;}
             #Blogs:hover{border-radius: 5vw;background-color: var(--hoverlight);}
             #educationblog:hover, #FOSSblog:hover{border: solid 3px var(--hoverborder);border-radius: 1.5vw;}
+            #blog:hover{border-radius:2.4vw}
 @keyframes fadeinglass{
     0% {transform: translateY(4vw);}
     100% {transform: translateY(0);}}
