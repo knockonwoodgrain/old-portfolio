@@ -93,6 +93,7 @@ body{margin: 0px;
     transform: perspective(1000px);}
     #indexbutton{text-align:center;position:absolute;margin:0 auto;right: 0;left: 0;}
     #buttontext{font-size: 3vw;padding:0;}
+    #blogtheme{display: inline-block; margin-left: 90%; margin-right: 0;}
     .btn-toggle{display: inline;
         cursor: pointer;
         font-weight: bolder; 

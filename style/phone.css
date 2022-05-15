@@ -66,19 +66,20 @@ body{
 /*-----------------------------------------------------------------------------------------------------------------*/
 .buttton{display: block;
     position: fixed;
-    top: 2vw;
-    right: 5vw;
+    top:1vw;
+    right: 0;
+    margin: 3vw;
     min-width: fit-content;
     max-width: fit-content; 
     outline: none;
     cursor: pointer;
     background-color: var(--blogbackground);
     box-shadow: 0 10px 12px 0px var(--boxshadow); 
-    border-radius: 5.85vw;
+    border-radius: 4.85vw;
     border: solid 0.5px var(--hoverborder);
     backdrop-filter: blur( 30.0px ); -webkit-backdrop-filter: blur( 10.0px );
     z-index: 999;}
-    #buttontext{font-size: 8vw;}
+    #buttontext{font-size: 12vw;margin: 1vw;}
     .btn-toggle{padding: 0.6vw;
         margin: 0;
         cursor: pointer;
@@ -192,7 +193,7 @@ body{
             text-align: center;
             max-width: fit-content;
             margin: 3vw !important;
-            margin-top: 1.5vw !important;margin-bottom: 1.5vw !important;
+            margin-top: 1.5vw !important;margin-bottom: 1.5vw;
             padding: 4vw !important;
             font-size: 6vw;
             color: var(--textcolor);
