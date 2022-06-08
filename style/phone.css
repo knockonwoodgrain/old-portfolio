@@ -206,8 +206,15 @@ body{
             border: solid 0.2px var(--paraborder);  
             transition: 0.4s;
             overflow: hidden;}
+            .inblogtext{color: var(--textcolor);
+                text-shadow:0px 1px 19px var(--parashadow);
+                transform: translate3d(20px);
+                -webkit-font-smoothing: antialiased;
+                font-size: 5vw;
+                text-align: justify;
+                text-justify: inter-word;}    
             .blog {
-                color: var(--textcolor);
+                color: var(--paracolor);
                 text-shadow:0px 1px 19px var(--parashadow);
                 transform: translate3d(20px);
                 -webkit-font-smoothing: antialiased;

@@ -176,6 +176,12 @@ body{margin: 0px;
             color: var(--paracolor);
             text-shadow:0px 1px 19px var(--parashadow);
             text-align: justify;transition: var(--transition);}
+        .inblogtext {display: inherit;
+            margin-bottom: 0;
+            font-size: 1.2vw; 
+            color: var(--paracolor);
+            text-shadow:0px 1px 19px var(--parashadow);
+            text-align: justify;transition: var(--transition);}
         .exists{display: block !important;transition: 1s;}
         .blogbox{margin:0.7vw;max-width: max-content;
             padding: 1vw;
