@@ -25,7 +25,7 @@ body{margin: 0px;
     background-position: center;
     background-size:cover;
     background-attachment: fixed;
-    transition: 0.1s;}
+    transition: 0.2s;}
     .textcolor{color: var(--paracolor);
         text-decoration: none;
 	flex-direction:row;}
@@ -38,7 +38,7 @@ body{margin: 0px;
         -webkit-font-smoothing: antialiased;}
 /*Scroll Bar Configuration--------------------------------------------------------------------*/
 ::selection{background-color: rgba(0, 0, 0, 0.164);
-    text-shadow:0 0px 5px var(--textcolor);}
+    text-shadow:0 0px 5px var(--blogbackground);}
 ::-webkit-scrollbar-track{border-radius: 10px;
 	background-color: var(--bgcolor-glass);
     border: solid 1px var(--hoverborder);
@@ -87,11 +87,11 @@ body{margin: 0px;
     border-radius: 1.2vw;
     border: solid 1.5px var(--hoverborder);
     box-shadow: 0 10px 12px 0px var(--boxshadow); 
-    backdrop-filter: blur( 45.0px );-webkit-backdrop-filter: blur( 10.0px );
     background-color: var(--buttonbackground);
     transform-style: preserve-3d;
     transform: perspective(1000px);}
-    #indexbutton{text-align:center;position:absolute;margin:0 auto;right: 0;left: 0;}
+    #indexbutton{text-align:center;position:absolute;margin:0 auto;right: 0;left: 0;transform-style: preserve-3d;
+    transform: perspective(1000px);}
     #buttontext{font-size: 3vw;padding:0;}
     #blogtheme{display: inline-block; margin-left: 90%; margin-right: 0;}
     .btn-toggle{display: inline;
@@ -100,7 +100,7 @@ body{margin: 0px;
         background-color: #00000000;
         color: var(--textcolor);
         border: none;
-        outline: none;padding: none;}
+        outline: none;padding: none;transform:translateZ(20px);}
     #themeimage{display: none;}
     .btn-toggle-phone{display: none;}
 /*------------------------------------------------------------------------------------------------------*/
@@ -128,12 +128,11 @@ body{margin: 0px;
     text-align: center;
     align-items: center;}
     #glassoriginal{margin-bottom: 2vw;}
-    #glassone{float:left;}#glasstwo{float:right;}
-    .glasses{justify-content: space-between;}
+    .glasses{justify-content: space-between;display:flex; flex-direction:row;align-items:center; min-height: 100%; min-width: 100vw;}
     /*Normal Glass Boxes-------------------------------------------------------------*/
     .texxt {min-width:fit-content; 
-	margin-bottom:0;
-	max-width:fit-content;
+	    max-width:fit-content;
+	    margin:0.5vw;
         padding-left: 1vw;
         padding-right: 1vw;
         font-size: 3vw; 
@@ -142,23 +141,27 @@ body{margin: 0px;
         background: var(--blogbackground);
         box-shadow: 0 5px 16px 0px var(--boxshadow);
         border-radius: 1.5vw;  
-        border: solid 0.2px var(--paraborder);  }
+        border: solid 0.2px var(--paraborder);  transform-style: preserve-3d; transform: perspective(1000px);}
     .para {font-size: 1.5vw; 
 	margin-top:1vw;margin-bottom:1vw;
         color: var(--paracolor);
         text-shadow:0px 1px 19px var(--parashadow);
         text-align:justify ;
         -webkit-font-smoothing: antialiased;}
-    #stats{width: 8vw;}
-    #socialheading{margin-left: 0.01vw; margin-right: 0.01vw;}
     /*-----------------------------------------------------------------------------*/
     /*Gallery----------------------------------------------------------------------*/
     #gallery{margin-bottom: 2vw; max-width: fit-content;display:flex;flex-direction:row;flex-wrap: wrap; align-items:center;justify-items:center;}
-    .image{display: flex; flex-wrap: wrap; height: 24vw; border-radius: 2vw; box-shadow: 0 5px 16px 0px var(--boxshadow);border: solid 3px var(--imageborder); transition: var(--transition); }
+    .image{display: flex; 
+        flex-wrap: wrap; 
+        height: 24vw; 
+        border-radius: 2vw; 
+        box-shadow: 0 5px 16px 0px var(--boxshadow);
+        border: solid 3px var(--imageborder); 
+        transition: var(--transition);
+        margin: 0.5vw; }
     /*Blog-------------------------------------------------------------------------*/
     .texxst {max-width: max-content;
-        padding-left: 1vw;
-        padding-right: 1vw;
+        padding: 1vw;
         text-align: center;
         font-size: 3vw;
         color: var(--textcolor);
@@ -166,30 +169,27 @@ body{margin: 0px;
         box-shadow: 0 5px 16px 0px var(--boxshadow);
         border-radius: 1.5vw;
         border: solid 0.2px var(--paraborder);
-        transition: var(--transition);
-        overflow: hidden;}
-    #FOSSblog,#educationblog {max-width: max-content;
-        padding-left: 1vw;
-        padding-right: 1vw;
-        text-align: center;
-        font-size: 3vw;
-        color: var(--textcolor);
-        background:var(--blogbox); 
-        box-shadow: 0 5px 16px 0px var(--boxshadow);
-        border-radius: 1.5vw;
-        border: solid 0.2px var(--paraborder);
-        transition: var(--transition);
-        overflow: hidden;}    
-        #Blogs{background: var(--blogbackground);margin-top: 0;}
+        transition:0; 
+        transform-style: preserve-3d; transform: perspective(2000px);}
         .blog {display: inherit;
-            padding-bottom: 0;
+            margin-bottom: 0;
             font-size: 1.2vw; 
             color: var(--paracolor);
             text-shadow:0px 1px 19px var(--parashadow);
-            text-align: justify;
-            text-justify: inter-word;
-            transform: translate3d(20px);-webkit-font-smoothing: antialiased;}
-        .blogbox{margin:0.5vw;}
+            text-align: justify;transition: var(--transition);}
+        .exists{display: block !important;transition: 1s;}
+        .blogbox{margin:0.7vw;max-width: max-content;
+            padding: 1vw;
+            text-align: center;
+            font-size: 3vw;
+            color: var(--textcolor);
+            background:var(--blogbox); 
+            box-shadow: 0 5px 16px 0px var(--boxshadow);
+            border: solid 0.2px var(--paraborder);
+            transition: var(--transition);
+            overflow: hidden;
+            border-radius: 2vw}
+        .indexblog{max-width:50%;border-radius: 2vw;margin: 0.7vw;}
         .headingbutton{display: flex;flex-direction: row;justify-content: space-between;align-items: flex-start;}
         .blogheading{margin-top: 0;
             margin-bottom: 1vw;
@@ -202,30 +202,18 @@ body{margin: 0px;
             font-size: 2.7vw;
             font-weight: 600;
             color: var(--paracolor);
-            max-width: fit-content;
-        }
-    .blogheadingin{
+            max-width: fit-content;}
+        .blogheadingin{
             margin-top: 0;
             margin-bottom: 0.5vw;
             font-size: 2.7vw;
             font-weight: 600;
-            color: var(--paracolor);
-        }
+            color: var(--paracolor);transition: var(--transition);}
         /*Blog Text------------------------------------------------------------------------------*/
-        #blog{margin-bottom: 2vw; min-width: 90%;display:flex;flex-direction:row;align-items:center;justify-items:center;border-radius:3vw;padding: 1.5vw;}
-            #educationblog, #FOSSblog{margin-left: 0;
-                margin-right: 0;
-                padding-bottom: 0;
-                border: solid 3px rgba(0, 0, 0, 0);
-                border-radius: 2vw;
-                transition:0.7s;}
-            #educationblog{margin-bottom: 1.5vw;}
-            #FOSSblog{margin-bottom: 0;}
-            .leftblog, .rightblog{max-width:50%;margin-bottom: 0;border-radius: 2vw;}
-	    .leftblog{margin-left:0;}.rightblog{margin-right:0;}
+        #blog{margin-bottom: 2vw; min-width: 90%;display:flex;flex-direction:row;align-items:center;justify-items:center;border-radius:3vw;padding: 1vw;}
             .more{display: none;
                 font-size: 1.2vw;
-                text-align: justify; color: var(--paracolor);}
+                text-align: justify; color: var(--paracolor);margin-bottom: 0;}
             /*Read More Button---------------------------------------------------------------*/
             .readmore{position: relative;
                 margin-left: 1vw;
@@ -247,6 +235,47 @@ body{margin: 0px;
 /*-------------------------------------------------------------------------------------*/
 #galleryheading{background-color: var(--blogbackground);}
 
+/*AppStuff-------------------------------------------------------------------------------------*/
+.appflex{display: flex;flex-direction: row;}
+.appbox{max-width: max-content;
+        flex: 0 0 42vw;
+        margin: 0.7vw;
+        padding: 1vw;
+        text-align: center;
+        font-size: 3vw;
+        color: var(--textcolor);
+        background:var(--blogbackground); 
+        box-shadow: 0 5px 16px 0px var(--boxshadow);
+        border-radius: 1.5vw;
+        border: solid 0.2px var(--paraborder);
+        transition:var(--transition);}
+.appheading{
+        display: flex; 
+        text-align: left;
+        margin: 0;
+        font-size: 2.7vw;
+        font-weight: 600;
+        color: var(--textcolor);
+        max-width: fit-content;}
+.appicon{
+    display: flex;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 1vw;
+    margin: 0.5vw;
+    transition: var(--transition);
+}
+#blackhole{padding: 0.4vw;background-color: black;}
+#stremio{padding:0.4vw;background-color: #201f32;}
+#saikou{background-color: #1a222e;}
+.applink{color:var(--textcolor);}
+.apptext{display: inherit;
+        margin: 0;
+        font-size: 1.2vw; 
+        color: var(--textcolor);
+        text-shadow:0px 1px 19px var(--parashadow);
+        text-align: justify;transition: var(--transition);}
+/*-------------------------------------------------------------------------------------*/
 /*Hover Animations----------------------------------------------------------------------*/
 .texxt:hover{background-color: var(--hoverlight);
     border: solid 3px var(--hoverborder);}
@@ -257,8 +286,12 @@ body{margin: 0px;
         .texxt:hover{border-radius: 5vw;}
         .texxst:hover{border-radius: 3vw;}
             #Blogs:hover{border-radius: 5vw;background-color: var(--hoverlight);}
-            #educationblog:hover, #FOSSblog:hover{border: solid 3px var(--hoverborder);border-radius: 1.5vw;}
+            .blogbox:hover{border: solid 3px var(--hoverborder);border-radius: 1.5vw;}
             #blog:hover{border-radius:2.4vw}
+            .texxst:hover > .blogheadingin{transform:translateZ(40px);}
+            .texxst:hover > .blog{transform:translateZ(20px);}
+.appicon:hover{transform: scale(1.3);}
+.appbox:hover{border-radius: 2vw;}
 @keyframes fadeinglass{
     0% {transform: translateY(4vw);}
     100% {transform: translateY(0);}}

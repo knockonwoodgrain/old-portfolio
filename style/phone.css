@@ -104,7 +104,7 @@ body{
     backdrop-filter: blur( 30.0px );-webkit-backdrop-filter: blur( 10.0px );
     z-index: 99;
     text-align: justify;}
-    .glasses{justify-content: space-evenly;}
+    .glasses{justify-content: space-evenly;display:flex; flex-direction:row;align-items:center; min-height: 100%; min-width: 100vw;}
     #socialmedia{min-width: 100%; 
         margin-left: 0; 
         margin-right: 0;}
@@ -120,12 +120,14 @@ body{
         position:relative;
         padding-right: 3vw;
         padding-left: 3vw;}
-    #blog {margin: 2vw;
+    #blog {margin-right: 0;margin-left: 0;
         margin-top:0; 
         position:relative;
-        padding-right: 0px; 
-        padding-left: 0px;
-        border: 0px;}
+        border: 0px;
+        padding: 1.5vw;
+        margin-bottom: 4vw;
+        min-width: fit-content;
+        border-radius: 0;}
     #gallery{margin-bottom: 2vw; 
         display:flex;
         flex-direction:row;
@@ -136,9 +138,10 @@ body{
     .image{display: flex; 
         flex-wrap: wrap; 
         width: 94vw; 
-        border-radius: 2vw; 
+        border-radius: 4vw; 
         box-shadow: 0 5px 16px 0px var(--boxshadow);
-        border: solid 3px var(--hoverborder); }
+        border: solid 3px var(--hoverborder);
+        margin: 1vw; }
     /*------------------------------------------------------------------------------------------------------------------------*/
     
     /*Normal Glass Boxes------------------------------------------------------------------------------------------------------*/
@@ -147,8 +150,7 @@ body{
         padding-right: 3vw;
         padding-top: 1vw;
         padding-bottom: 1vw;
-	margin:1vw;
-	margin-bottom:0vw;
+	    margin:1.5vw;
         font-size:5vw;
         text-align: center;
         color: var(--textcolor);
@@ -162,7 +164,8 @@ body{
     #stats{width: 13vw;}
     #parth{width: 13vw}
     .para {font-size: 4vw;
-	height:fit-content;
+        margin-top:1vw;
+	    height:fit-content;
         text-align:justify;
         color: var(--paracolor);
         text-shadow:0px 1px 19px var(--parashadow);
@@ -187,7 +190,7 @@ body{
             transition: 0.04s;
             overflow: hidden;}
             .headingbutton{display: flex;justify-content: space-between;flex-direction: column;}
-            .reading{
+        .reading{
             padding-bottom: 1vw;
             padding-top: 1vw;
             text-align: center;
@@ -211,20 +214,18 @@ body{
                 font-size: 5vw;
                 text-align: justify;
                 text-justify: inter-word;}
-            .blogbox{margin-bottom: 3vw;}
             .blogheading{margin-top: 0; margin-bottom: 1vw; font-size: 7vw;}
             .blogheadingin{margin-top: 0; margin-bottom: 1vw; font-size: 5.3vw; font-weight: 500;}
             .blogheadingbl{margin-top: 0; margin-bottom: 0; font-size: 7vw;color: var(--paracolor);text-align: center;}
             /*Blog Text------------------------------------------------------------------------------------------------------*/
-            #blog {margin-bottom: 4vw;min-width: fit-content;margin: 0;border-radius: 0;}
             #blogindex{font-size: 4vw;color: var(--textcolor);}
-            .educationblog, .FOSSblog{padding: 3vw; margin-left: 0px; margin-right:0px ; 
+            .blogbox{padding: 3vw;  
                 border-right: 0px;
                 border-left: 0px; 
-                border-radius: 0px;
-                background-color: var(--bgcolor-glass);
-                transition: 0.5s;}
-            .leftblog, .rightblog{max-width: 100%; margin-right: 3vw; margin-left: 3vw;border-radius: 5vw;}
+                border-radius:5vw;
+                transition: 0.5s;
+                margin:1.5vw;
+                max-width: 100%;}
             .more{display: none; font-size: 5vw; text-align: justify;color: var(--paracolor);}
             #more {display: none;}
             /*Read More Button------------------------------------------------------------------------------------------------------*/
@@ -242,7 +243,44 @@ body{
                 border: solid 1px #ffffff00;
                 overflow: hidden;}
 /*------------------------------------------------------------------------------------------------------*/
-
+/*AppStuff-------------------------------------------------------------------------------------*/
+.appflex{display: flex;flex-direction: column;}
+.appbox{max-width: max-content;
+        margin: 3vw;
+        margin-left: 0;margin-right: 0;
+        padding: 4vw;
+        text-align: center;
+        font-size: 5vw;
+        color: var(--textcolor);
+        background:var(--blogbackground); 
+        box-shadow: 0 5px 16px 0px var(--boxshadow);
+        border-radius: 7vw;
+        border: solid 0.2px var(--paraborder);
+        transition:0;}
+.appheading{display: flex;flex-direction: row; text-align: left;
+        margin: 0;
+        font-size: 10vw;
+        font-weight: 600;
+        color: var(--textcolor);
+        max-width: fit-content;}
+.appicon{
+    display: flex;
+    width: 11vw;
+    height: 11vw;
+    border-radius: 3vw;
+    margin: 1vw;
+}
+#blackhole{padding: 2vw;background-color: black;}
+#stremio{padding:2vw;background-color: #201f32;}
+#saikou{background-color: #1a222e;}
+.applink{color:var(--textcolor);}
+.apptext{display: inherit;
+        margin: 0;
+        font-size: 5vw; 
+        color: var(--textcolor);
+        text-shadow:0px 1px 19px var(--parashadow);
+        text-align: justify;transition: var(--transition);}
+/*-------------------------------------------------------------------------------------*/
 
 /*-------------------------------------------------------------------------------*/
 .texxst:hover, .texxt:hover{ animation-name: scale; animation-duration: 0.69s; animation-iteration-count: 1;}

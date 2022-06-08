@@ -44,6 +44,19 @@ $( "#FOSSbutton" ).click(function() {
             $( "#FOSSblog" ).addClass( "reading" );
         }
 });
+$( "#APPbutton" ).click(function() {
+  $( "#APPmore" ).slideToggle("slow");
+  var $this = $(this);
+        $this.toggleClass("open");
+
+        if ($this.hasClass("open")) {
+            $this.html("Read Less");
+            $( "#APPblog" ).removeClass( "reading" );
+        } else {
+            $this.html("Read more");
+            $( "#APPblog" ).addClass( "reading" );
+        }
+});
 document.getElementById("body").onscroll = function myFunction() {  
     var scrolltotop = document.scrollingElement.scrollTop;
     var target = document.getElementById("main1");
@@ -51,4 +64,4 @@ document.getElementById("body").onscroll = function myFunction() {
     var factor = 0.5;
     var yvalue = scrolltotop * factor;
     target.style.backgroundPosition = xvalue + " " + yvalue + "px";
-  }
+  };
