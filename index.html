@@ -86,17 +86,20 @@
         </div>
     </div>
     <br><br>
-</body>
-<script async type="text/javascript" src="scripts/vanilla-tilt.js"></script>
-<script type="text/javascript" src="scripts/script.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
 <script type="text/javascript">
-VanillaTilt.init(document.querySelector(".glass"), {glare: false,max: 2.45,scale: 1.03});
-VanillaTilt.init(document.querySelectorAll(".texxt"), {max:10,reverse:true,scale:1.1});
-VanillaTilt.init(document.querySelectorAll("#glassone"), {glare: false,max: 6,scale: 1.1});
-VanillaTilt.init(document.querySelectorAll("#glasstwo"), {glare: false,max: 6,scale: 1.1});
-VanillaTilt.init(document.querySelectorAll("#blog"), {glare: false,max: 3,scale: 1});
-VanillaTilt.init(document.querySelectorAll(".texxst"), {max:4,reverse:true,glare:false,scale:1.01,"max-glare":0.11});
-VanillaTilt.init(document.querySelectorAll("#indexbutton"), {max:10,scale:2,"max-glare":1.11});
+$(".glass").tilt({glare: false,maxTilt: 2.45,scale: 1.03});
+$(".texxt").tilt({maxTilt:10,reverse:true,scale:1.1});
+$("#glassone").tilt({glare: false,maxTilt: 6,scale: 1.1});
+$("#glasstwo").tilt({glare: false,maxTilt: 6,scale: 1.1});
+$("#blog").tilt({glare: false,maxTilt: 3,scale: 1});
+$(".texxst").tilt({maxTilt:4,reverse:true,glare:false,scale:1.01,"max-glare":0.11});
+$("#indexbutton").tilt({maxTilt:10,scale:2,"max-glare":1.11});
 </script>
+</body>
+<script type="text/javascript" src="scripts/script.js"></script>
+
 </body>
 </html>

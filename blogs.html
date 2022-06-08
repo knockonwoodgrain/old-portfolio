@@ -16,8 +16,7 @@
         <button class="material-symbols-rounded btn-toggle"><span class="material-symbols-rounded" id="buttontext">dark_mode</span></button>
     </div>
     <div id="blog" class="glass overflow" style="display:flex; flex-direction:column; position: relative; top: 2vw; min-width: 90%;">
-        <h4 class="texxt" style="transition: 0.5s;"><p class="textcolor" style="margin:0;color:var(--textcolor);">Blogs</p></h4>
-
+        <h4 class="texxt" style="transition: 0.5s;" data-tilt><p class="textcolor" style="margin:0;color:var(--textcolor);">Blogs</p></h4>
         <div class="reading blogbox" id="educationblog" style="text-align: left; font-weight: 500;">
             <div class="headingbutton">
                 <p class="blogheadingbl">Why you should switch to Linux</p><button id="edubutton" class="readmore" data-tilt data-tilt-glare="true" data-tilt-max-glare="0.11" data-tilt-scale="1.1">Read More</button>
@@ -66,11 +65,11 @@
     </div>
    <br><br> 
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script async type="text/javascript" src="scripts/vanilla-tilt.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
 <script language="javascript" src="scripts/script.js"></script>
 <script type="text/javascript">
-VanillaTilt.init(document.querySelector(".texxt"), {max:10,reverse:true,scale:1.1});
+$('.texxt').tilt({max:10,reverse:true,scale:1.1});
 </script>
 </body>
 

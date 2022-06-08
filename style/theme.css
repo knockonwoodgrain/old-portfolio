@@ -167,10 +167,9 @@ body{margin: 0px;
         color: var(--textcolor);
         background:var(--blogbox); 
         box-shadow: 0 5px 16px 0px var(--boxshadow);
-        border-radius: 1.5vw;
         border: solid 0.2px var(--paraborder);
         transition:0; 
-        transform-style: preserve-3d; transform: perspective(2000px);}
+        transform-style: preserve-3d;}
         .blog {display: inherit;
             margin-bottom: 0;
             font-size: 1.2vw; 
@@ -288,8 +287,8 @@ body{margin: 0px;
             #Blogs:hover{border-radius: 5vw;background-color: var(--hoverlight);}
             .blogbox:hover{border: solid 3px var(--hoverborder);border-radius: 1.5vw;}
             #blog:hover{border-radius:2.4vw}
-            .texxst:hover > .blogheadingin{transform:translateZ(40px);}
-            .texxst:hover > .blog{transform:translateZ(20px);}
+            .texxst:hover > .blogheadingin{transform:translateZ(20px);}
+            .texxst:hover > .blog{transform:translateZ(10px);}
 .appicon:hover{transform: scale(1.3);}
 .appbox:hover{border-radius: 2vw;}
 @keyframes fadeinglass{
