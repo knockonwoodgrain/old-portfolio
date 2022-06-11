@@ -295,7 +295,7 @@ body{
 /*-------------------------------------------------------------------------------------*/
 
 /*-------------------------------------------------------------------------------*/
-.texxst:hover, .texxt:hover, .appbox{ animation-name: scale; animation-duration: 0.69s; animation-iteration-count: 1;}
+.texxst:hover, .texxt:hover, .appbox:hover{ animation-name: scale; animation-duration: 0.69s; animation-iteration-count: 1;}
 #blog:hover, #educationblog:hover, #FOSSblog:hover{animation: none;}
 .glass:hover,.glass:active,.glass:focus{animation-name: scale1; animation-duration: 0.69s; animation-iteration-count: 1;}
 @keyframes scale{
