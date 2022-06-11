@@ -185,7 +185,7 @@ body{
             color: var(--textcolor);
             background: var(--blogbackground);
             box-shadow: 0 5px 16px 0px var(--boxshadow);
-            border-radius: 3.4vw;  
+            border-radius: 4vw;  
             border: solid 0.2px var(--paraborder);  
             transition: 0.04s;
             overflow: hidden;}
@@ -210,7 +210,7 @@ body{
                 text-shadow:0px 1px 19px var(--parashadow);
                 transform: translate3d(20px);
                 -webkit-font-smoothing: antialiased;
-                font-size: 5vw;
+                font-size: 4vw;
                 text-align: justify;
                 text-justify: inter-word;}    
             .blog {
@@ -222,7 +222,7 @@ body{
                 text-align: justify;
                 text-justify: inter-word;}
             .blogheading{margin-top: 0; margin-bottom: 1vw; font-size: 7vw;}
-            .blogheadingin{margin-top: 0; margin-bottom: 1vw; font-size: 6.3vw; font-weight: 500;}
+            .blogheadingin{margin-top: 0; margin-bottom: 1vw; font-size: 5.5vw; font-weight: 500;}
             .blogheadingbl{margin-top: 0; margin-bottom: 0; font-size: 7vw;color: var(--paracolor);text-align: center;}
             /*Blog Text------------------------------------------------------------------------------------------------------*/
             #blogindex{font-size: 4vw;color: var(--textcolor);}
@@ -262,8 +262,7 @@ body{
         background:var(--blogbackground); 
         box-shadow: 0 5px 16px 0px var(--boxshadow);
         border-radius: 7vw;
-        border: solid 0.2px var(--paraborder);
-        transition:0;}
+        border: solid 0.2px var(--paraborder);}
 .appheading{display: flex;flex-direction: row; text-align: left;
         margin: 0;
         font-size: 10vw;
@@ -280,6 +279,12 @@ body{
 #blackhole{padding: 2vw;background-color: black;}
 #stremio{padding:2vw;background-color: #201f32;}
 #saikou{background-color: #1a222e;}
+#infinity{background: linear-gradient(0deg, rgba(19,52,95,1) 0%, rgba(7,25,53,1) 100%); }
+#libretorrent{background:#9c27b0;}
+#newpipe{background:#cd201f;}
+#signal{background: white;padding: 2vw;}
+#tachiyomi{background:#2e83bf;}
+#droid{background:white;}
 .applink{color:var(--textcolor);}
 .apptext{display: inherit;
         margin: 0;
@@ -290,7 +295,7 @@ body{
 /*-------------------------------------------------------------------------------------*/
 
 /*-------------------------------------------------------------------------------*/
-.texxst:hover, .texxt:hover{ animation-name: scale; animation-duration: 0.69s; animation-iteration-count: 1;}
+.texxst:hover, .texxt:hover, .appbox{ animation-name: scale; animation-duration: 0.69s; animation-iteration-count: 1;}
 #blog:hover, #educationblog:hover, #FOSSblog:hover{animation: none;}
 .glass:hover,.glass:active,.glass:focus{animation-name: scale1; animation-duration: 0.69s; animation-iteration-count: 1;}
 @keyframes scale{

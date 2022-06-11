@@ -254,6 +254,7 @@ body{margin: 0px;
         border-radius: 1.5vw;
         border: solid 0.2px var(--paraborder);
         transition:var(--transition);}
+#droidify{flex: auto !important;}
 .appheading{
         display: flex; 
         text-align: left;
@@ -273,6 +274,12 @@ body{margin: 0px;
 #blackhole{padding: 0.4vw;background-color: black;}
 #stremio{padding:0.4vw;background-color: #201f32;}
 #saikou{background-color: #1a222e;}
+#infinity{background: linear-gradient(0deg, rgba(19,52,95,1) 0%, rgba(7,25,53,1) 100%); }
+#libretorrent{background:#9c27b0;}
+#newpipe{background:#cd201f;}
+#signal{background: white;padding: 0.4vw;}
+#tachiyomi{background:#2e83bf;}
+#droid{background:white;}
 .applink{color:var(--textcolor);}
 .apptext{display: inherit;
         margin: 0;
