@@ -17,7 +17,6 @@
     <script type="text/javascript">
     var r = document.querySelector(':root');
     var rs = getComputedStyle(r);
-    r.style.setProperty('--bgimage', 'lightblue')
     rs.getPropertyValue('--bgimage')
     fetch('https://source.unsplash.com/random/1920x1080').then((response) =>{
         image = document.getElementById("bruh").src = response.url

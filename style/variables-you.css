@@ -1,5 +1,4 @@
 :root{
-   --bgcolor-glass:hsla(84, 10%, 10%, 0.7);
    --bgcolor-glass: hsla(var(--accent-hue),30%,15%,60%);
    --parashadow:hsla(0, 0%, 0%, 0.451);
    --blogbackground:hsl(var(--accent-hue), 46%, 67%);

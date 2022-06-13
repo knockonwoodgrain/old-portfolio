@@ -12,15 +12,14 @@
     <script type="text/javascript">
     var r = document.querySelector(':root');
     var rs = getComputedStyle(r);
-    r.style.setProperty('--bgimage', 'lightblue')
     rs.getPropertyValue('--bgimage')
     fetch('https://source.unsplash.com/random/1920x1080').then((response) =>{
         image = document.getElementById("bruh").src = response.url
         r.style.setProperty('--bgimage', "url("+response.url+")")
     });</script>
 </head>
-
-<body>
+<body onload="load()">
+    <img id="bruh" style="display:none;" >
     <div class="buttton" id="blogtheme" style="display: block; margin-top: 3vw;"data-tilt data-tilt-scale="1.1">
         <button class="material-symbols-rounded btn-toggle"><span class="material-symbols-rounded" id="buttontext">dark_mode</span></button>
     </div>
@@ -99,7 +98,7 @@ $('.appbox').tilt({maxTilt:3});
 <script>
 const colorThief = new ColorThief();
 const sourceImage = document.getElementById("bruh");
-var r = document.querySelector(':root');
+var y = document.querySelector(':root');
 sourceImage.crossOrigin = "Anonymous";
 function hue(R, G, B)
 {
@@ -152,14 +151,14 @@ function hue(R, G, B)
             Hue += 360.0;
         }
     }
-    r.style.setProperty('--accent-hue', Hue);
+    y.style.setProperty('--accent-hue', Hue);
     console.log(Hue);
     return Hue;
 }
 if (sourceImage.complete) {
     const dominantColor = colorThief.getColor(sourceImage);
     console.log(dominantColor)
-    r.style.setProperty('--accent', "rgb("+dominantColor+")");
+    y.style.setProperty('--accent', "rgb("+dominantColor+")");
     let R = dominantColor[0]
     let G = dominantColor[1]
     let B = dominantColor[2]
@@ -168,7 +167,7 @@ if (sourceImage.complete) {
       sourceImage.addEventListener('load', function() {
         const dominantColor = colorThief.getColor(sourceImage);
         console.log(dominantColor)
-        r.style.setProperty('--accent', "rgb("+dominantColor+")");
+        y.style.setProperty('--accent', "rgb("+dominantColor+")");
         let R = dominantColor[0]
         let G = dominantColor[1]
         let B = dominantColor[2]
