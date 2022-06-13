@@ -9,6 +9,15 @@
     <link href="style/variables-you.css" rel="stylesheet" id="theme-link"/>
     <link href="assets/p.png" rel="icon" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script type="text/javascript">
+    var r = document.querySelector(':root');
+    var rs = getComputedStyle(r);
+    r.style.setProperty('--bgimage', 'lightblue')
+    rs.getPropertyValue('--bgimage')
+    fetch('https://source.unsplash.com/random/1920x1080').then((response) =>{
+        image = document.getElementById("bruh").src = response.url
+        r.style.setProperty('--bgimage', "url("+response.url+")")
+    });</script>
 </head>
 
 <body>
@@ -86,5 +95,85 @@ $('.readmore').tilt({scale:1.1,glare:false});
 $('.appbox').tilt({maxTilt:3});
 </script>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
+<script>
+const colorThief = new ColorThief();
+const sourceImage = document.getElementById("bruh");
+var r = document.querySelector(':root');
+sourceImage.crossOrigin = "Anonymous";
+function hue(R, G, B)
+{
+    let Max = 0.0;
+    let Min = 0.0;
+
+    let fR = R / 255.0;
+    let fG = G / 255.0;
+    let fB = B / 255.0;
+
+    if(fR >= fG && fR >= fB)
+        Max = fR;
+    else if(fG >= fB && fG >= fR)
+        Max = fG;
+    else if(fB >= fG && fB >= fR)
+        Max = fB;
+
+    if(fR <= fG && fR <= fB)
+        Min = fR;
+    else if(fG <= fB && fG <= fR)
+        Min = fG;
+    else if(fB <= fG && fB <= fR)
+        Min = fB;
+
+    let Hue;
+
+    if(Max == Min)
+    {
+        Hue = -1.0;
+    }
+    else
+    {
+        if(Max == fR)
+        {
+            Hue = (fG - fB) / (Max - Min);
+        }
+        else if(Max == fG)
+        {
+            Hue = 2.0 + (fB - fR) / (Max - Min);
+        }
+        else if(Max == fB)
+        {
+            Hue = 4.0 + (fR - fG) / (Max - Min);
+        }
+
+        Hue *= 60.0;
+
+        if(Hue < 0.0)
+        {
+            Hue += 360.0;
+        }
+    }
+    r.style.setProperty('--accent-hue', Hue);
+    console.log(Hue);
+    return Hue;
+}
+if (sourceImage.complete) {
+    const dominantColor = colorThief.getColor(sourceImage);
+    console.log(dominantColor)
+    r.style.setProperty('--accent', "rgb("+dominantColor+")");
+    let R = dominantColor[0]
+    let G = dominantColor[1]
+    let B = dominantColor[2]
+    hue(R, G, B);
+    } else { 
+      sourceImage.addEventListener('load', function() {
+        const dominantColor = colorThief.getColor(sourceImage);
+        console.log(dominantColor)
+        r.style.setProperty('--accent', "rgb("+dominantColor+")");
+        let R = dominantColor[0]
+        let G = dominantColor[1]
+        let B = dominantColor[2]
+        hue(R, G, B);
+      })};
+</script>
 <script language="javascript" src="scripts/script.js"></script>
 </html>
