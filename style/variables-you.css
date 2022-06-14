@@ -1,5 +1,5 @@
 :root{
-   --bgcolor-glass: hsla(var(--accent-hue),30%,15%,60%);
+   --bgcolor-glass: hsla(var(--accent-hue),20%,15%,60%);
    --parashadow:hsla(0, 0%, 0%, 0.451);
    --blogbackground:hsl(var(--accent-hue), 46%, 67%);
    --blogbox:hsla(var(--accent-hue), 30%, 7%, 0.8);

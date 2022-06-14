@@ -15,16 +15,15 @@
     rs.getPropertyValue('--bgimage')
     var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     if (width<=900){
-    fetch('https://source.unsplash.com/random/1080x1920').then((response) =>{
+    fetch('https://source.unsplash.com/random/1080x1920/?wallpaper').then((response) =>{
         image = document.getElementById("bruh").src = response.url
         r.style.setProperty('--bgimage', "url("+response.url+")")})} else {
-        fetch('https://source.unsplash.com/random/1920x1080').then((response) =>{
+        fetch('https://source.unsplash.com/random/1920x1080/?wallpaper').then((response) =>{
             image = document.getElementById("bruh").src = response.url
             r.style.setProperty('--bgimage', "url("+response.url+")")})       
-        }
-    </script>
+        }</script>
 </head>
-<body onload="load()">
+<body>
     <img id="bruh" style="display:none;" >
     <div class="buttton" id="blogtheme" style="display: block; margin-top: 3vw;"data-tilt data-tilt-scale="1.1">
         <button class="material-symbols-rounded btn-toggle"><span class="material-symbols-rounded" id="buttontext">dark_mode</span></button>

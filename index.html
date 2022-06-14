@@ -20,26 +20,20 @@
     rs.getPropertyValue('--bgimage')
     var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     if (width<=900){
-    fetch('https://source.unsplash.com/random/1080x1920').then((response) =>{
+    fetch('https://source.unsplash.com/random/1080x1920/?wallpaper').then((response) =>{
         image = document.getElementById("bruh").src = response.url
         r.style.setProperty('--bgimage', "url("+response.url+")")})} else {
-        fetch('https://source.unsplash.com/random/1920x1080').then((response) =>{
+        fetch('https://source.unsplash.com/random/1920x1080/?wallpaper').then((response) =>{
             image = document.getElementById("bruh").src = response.url
             r.style.setProperty('--bgimage', "url("+response.url+")")})       
-        }
-        </script>
+        }</script>
 </head>
-<body style="text-align:justify;" onload="load()">
-    <img id="bruh" style="display:none;" >
-    <br><br>
+<body style="text-align:justify;">
+<img id="bruh" style="display:none;" >
+<br><br>
     <div id="glassoriginal" class="glass overflow">
         <h1 class="texxt" id="parth"><p style="transform: translateZ(20px); margin: auto;">Parth</p></h1>
-        <p class="para" >Hi I am Parth Joshi, I can code in <a href="https://www.python.org/"
-                class="textcolor"><b>Python</b></a> and make websites, I can edit <a href="https://www.gimp.org/"
-                class="textcolor"><b>Photos</b></a> and <a href="https://shotcut.org/"
-                class="textcolor"><b>Videos</b></a>, I make <a href="https://www.blender.org" class="textcolor"><b>3d
-                    renders</b></a> and some Music for fun and I am good at drawing. I love computers and Techology. I have a habit of learing new skills then
-            forgetting them as soon as I find something new to learn.</p>
+        <p class="para" >Hi I am Parth Joshi, I can code in <a href="https://www.python.org/"class="textcolor"><b>Python</b></a> and make websites, I can edit <a href="https://www.gimp.org/"class="textcolor"><b>Photos</b></a> and <a href="https://shotcut.org/"class="textcolor"><b>Videos</b></a>, I make <a href="https://www.blender.org" class="textcolor"><b>3drenders</b></a> and some Music for fun and I am good at drawing. I love computers and Techology. I have a habit of learing new skills then forgetting them as soon as I find something new to learn.</p>
     </div>
     <div class="glasses">
         <div id="glassone" class="glass overflow" style="display: flex;">
@@ -51,11 +45,7 @@
         </div>
         <div id="glasstwo" class="glass overflow" style="display: flex;">
           <h3 class="texxt" id="socialheading" style="min-width:20vw;"><p style="transform: translateZ(20px); margin: 0;">Social Media</p></h3>
-                <p class="para" style="text-align: center;">Discord: Parth#4607<br> <a
-                        href="https://www.instagram.com/starmatter0/" class="textcolor">Instagram</a><br> <a
-                        href="https://www.youtube.com/channel/UCCdxSfKq0To8iuMIH2_cKMA" class="textcolor">YouTube</a><br> <a
-                        href="redirect.html" class="textcolor">Reddit</a><br> <a
-                        href="https://github.com/parthjoshioriginal" class="textcolor">Github</a></p>
+                <p class="para" style="text-align: center;">Discord: Parth#4607<br> <a href="https://www.instagram.com/starmatter0/" class="textcolor">Instagram</a><br> <a href="https://www.youtube.com/channel/UCCdxSfKq0To8iuMIH2_cKMA" class="textcolor">YouTube</a><br> <ahref="redirect.html" class="textcolor">Reddit</a><br> <a href="https://github.com/parthjoshioriginal" class="textcolor">Github</a></p>
         </div>
     </div>
     <div id="blog" class="glass overflow" style="display:flex;flex-direction:column;position:relative;text-align:center;top:2vw;">
@@ -80,24 +70,36 @@
     <div id="gallery" class="glass overflow" style="display:flex; flex-direction: column; position: relative; text-align: center; top: 2vw;" >
         <h1 class="texxt" id="parth" style="margin-bottom: 1vw;"><p style="transform: translateZ(20px); margin: auto;">Photo and Video Gallery</p></h1> 
         <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content:center;  align-items: center;">
+        <image class="image" src="https://media.discordapp.net/attachments/794971234030059541/985631975555620945/untitled4Edited.png"> 
         <image class="image" src="https://lh5.googleusercontent.com/0xjCy9BesdD4Ah-9l_4Pm2ksIgWG9MBOadKbcOgEiwJPRKXrf7uN1uNo_3s9NRQf2zY51_oilP2AnQJNYlwHvd4ffypS4xpX87rVEO3GyF0YWz0CDOBrVD_hxDiMbUjndTE6pwFkHT4d"> 
+        <video class="image" src="https://cdn.discordapp.com/attachments/967087117610127401/986226211632074772/AllInOneFinal.mp4?size=4096" loop autoplay muted></video> 
         <image class="image" src="https://lh4.googleusercontent.com/bk6t95H0DTl83nk2qKjHXKdbNmBJ7r2-M7Gqq0ujfzjl9QyUBEvmDMs2z0dfjG6YfEOKvHZuBPrRRsYSvWwbENw8NzX64D5DkoTa3IFEE0fduuovS46JdfEhhpk_zCNhWSIlc0NikCWO"> 
-        <image class="image" src="https://media.discordapp.net/attachments/765458394530185246/961327414431076372/IGOR.png"> 
+        <video class="image" src="https://cdn.discordapp.com/attachments/794971234030059541/986219597059485736/CofeeEdited.mp4?size=4096" loop autoplay muted></video> 
         <image class="image" src="https://lh3.googleusercontent.com/zicf1_PmOPxvCtiDqq8l-YolYK8caEKoDSWLLU1N6MBP-aaNByIQ0CSYWliIpzYNngU4Ile0FwLgj-ixil3DXy90nl5okgknRLami-8MdxOIe6BVCOFvSbK6rN9K_K2eQoH_oKUBVK-4"> 
+        <video class="image" src="https://cdn.discordapp.com/attachments/765458394530185246/872005084643467264/Phone1.mp4?size=4096" loop autoplay muted></video> 
+        <image class="image" src="https://media.discordapp.net/attachments/765458394530185246/961327414431076372/IGOR.png"> 
+        <image class="image" src="https://media.discordapp.net/attachments/794971234030059541/963092122897113198/Health4Edited.png"> 
         <image class="image" src="https://lh6.googleusercontent.com/ogeqthneXQru7Bd-0o-ISP9mOBNkrsB8bbFPyrTsaQkAV9twOg-izc7Ixz2bzWwC73eeEshg_u8C_9Oe3wskfy9qaffkUUhvjDOXz37tZuKEkCWcEC0U9J44xh0252wvFsCRBGpu8m8m"> 
+        <image class="image" src="https://media.discordapp.net/attachments/794971234030059541/986237559128616970/GlassAndPlates.png"> 
         <image class="image" src="https://lh6.googleusercontent.com/vWcOAQ4oAVyeWorWx8IknLZfnBdMeqtQg5TrXNkty94Gm1pRtJdRwXXliCCtseaJH08dUAxWAzbqvE6nzSVLsXlBGTl2KCMCjGeL9x8avxhCwgVVqVYOlDlK6QsPvvWrDWM2QO26m50I"> 
+        <image class="image" src="https://media.discordapp.net/attachments/765458394530185246/986219210298519573/WTFISTHIS3Edited.png"> 
         <image class="image" src="https://lh6.googleusercontent.com/ZcI7mSl-wK49oWt-cN4iaA5JlijKHGqvYgaU0vtOiXCOomE3GfOOsntE0pfJBfYARNdqOPMjWo6pL2siVYV0RZnw7-okYsUZ7E9RlWM1bYte2IjQoR2-rOaTkkiaDSEd99NWE0NiBMEt"> 
+        <image class="image" src="https://media.discordapp.net/attachments/794971234030059541/984007488196186153/untitled3Edited.png"> 
         <image class="image" src="https://lh4.googleusercontent.com/YWInZYbt09Hqx89JqfFxzrWnD_8kKbozhyclnvqDP235AWYoVmorqpP5QDb8zrTfrxhrHL3Rd_6jf5IKqOeqOiEGlOrc_7oEF5Fq7aRNIAEzdbVcAF1p8uo5_kABg0TaljiLhAD0Q2NW"> 
+        <image class="image" src="https://media.discordapp.net/attachments/794971234030059541/986237559476731924/WaterEdited.jpg"> 
         <image class="image" src="https://lh4.googleusercontent.com/p-Ni6rvdOQMZKjQxo67CHPGuSGvGz_ZgFNJae677c-onH5UsGoCJA4br_wk50K7u_Ge7V8e0ZFqTC4DDKcR1waWEI6RYSXh3P2OuMcWoya7Js2L1KFcobgrIwxkjAlKaXot5dFuvN96t"> 
         <image class="image" src="https://media.discordapp.net/attachments/765458394530185246/960865615067897886/IMG_20220405_170525.jpg"> 
         <image class="image" src="https://lh4.googleusercontent.com/RoLs-NTBYksrxMTdOgYk8jWc0naGGYstA_FDE-GMv1cuPFcDueIJV33HR3z5DEUEkB5cREUoZDGDci6XTFQDLRzNEWOadRo1XpVRv2oeFh3VZ9l0e1PtHv8hmwA7Rd58dSJC8Dhft890"> 
-        <image class="image" src="https://lh5.googleusercontent.com/PsoyfYD1O9VTXeja8sFWL3bOtIcCNXF1PVbvVeAajtpTImWUQS6_MDNFYKi6grW8NHyRb5hLD5J9kblacCDMHufx7rDPC8ttzTn4yHaHkVoZxsy6Lu1jpk294M6RsW3prjYxZvNM7XTc"> 
+        <image class="image" src="https://media.discordapp.net/attachments/794971234030059541/986237870010429440/1655205405336Edited.jpg"> 
+        <image class="image" src="https://lh6.googleusercontent.com/97IC6lPz0aaLozYEf_A1R4gwTgpmSpHiGzayWV1rR1UWvAWq1A5APxemCGwfz4r2l9k8NhWywcfQ0HWrDY5gZi_xbjXtNN10MgpyetbGs9K5TIQ1YC4X7W9JWh5MPb_GVCydBcFLV-G6"> 
+        <image class="image" src="style/GreenStuff.jpg"> 
+        <video class="image" src="https://cdn.discordapp.com/attachments/765458394530185246/953613613820686366/StaircaseFinal.mp4?size=4096" loop autoplay muted></video> 
         <image class="image" src="https://lh4.googleusercontent.com/osuu-xSNtI62ltZbfWa_y4wII4vFvJ3C1bu-Lfql8wgEBisppJck_xR89T_6-W6TqTpWpX74jDiLLk9tg3O6qp42FXNCRFhA8qQWE5KcAHTn2iiaKxjKEw1vVJOkKleMAXMvy8tcPZdM"> 
         <image class="image" src="https://lh6.googleusercontent.com/jahP8fFh35faF7UGG5LozkI3ExHHWhTiKnrjSCIdhuTkJyQigTFxTnPz0cbHVDVkO6KCXkEriH6lBs2uwemZhXq6KQRkbjHdK1gIqK3B5X9bdXnukAwwOnsklN8dxGcQ10OIyi7T96AM"> 
-        <image class="image" src="https://media.discordapp.net/attachments/794971234030059541/961713814745804800/ChairUltimateEdited.png"> 
         <image class="image" src="https://lh5.googleusercontent.com/AkXqvQhEC_y6bfhYZyOdBN-Sd8CR4cti7IZ0D-gmLTlmJTCo2wXe3bg1rnyHihcNPM9yW-RbYvwr_6UsvRG6j6Z4uPzbwurA8S0xGtWKDFqnfPLR9AIFo3rjE-y6SRX4Lvh7Oo1X5e1A"> 
         <image class="image" src="https://lh6.googleusercontent.com/pDVBk5n_hDNPsCclXIQrotbh7Z-qGTEGDjwd-DIZr6OjUkQg7LS62jJd_-fn-oq67IO7kxUjbZb2CZcs8o9fy70myt4iXWPLQeku4UvaG6xfgpa190zi0810rOfbhxZwDomOl4jCHk0J"> 
-        <image class="image" src="https://lh6.googleusercontent.com/97IC6lPz0aaLozYEf_A1R4gwTgpmSpHiGzayWV1rR1UWvAWq1A5APxemCGwfz4r2l9k8NhWywcfQ0HWrDY5gZi_xbjXtNN10MgpyetbGs9K5TIQ1YC4X7W9JWh5MPb_GVCydBcFLV-G6"> 
+        <image class="image" src="https://media.discordapp.net/attachments/794971234030059541/961713814745804800/ChairUltimateEdited.png"> 
+        <image class="image" src="https://media.discordapp.net/attachments/794971234030059541/986247182313197658/RenderoneEdited.png"> 
         </div>
     </div>
     <br><br>
@@ -106,7 +108,7 @@
 <script type="text/javascript" src="scripts/vanilla-tilt.js"></script>
 <script type="text/javascript">
 $(".glass").tilt({glare: false,maxTilt: 2.45,scale: 1.03});
-$("#gallery").tilt({glare: false,maxTilt: 0.1});
+$("#gallery").tilt({glare: false,maxTilt: 0.01});
 $(".texxt").tilt({maxTilt:10,reverse:true,scale:1.1});
 $("#glassone").tilt({glare: false,maxTilt: 6,scale: 1.1});
 $("#glasstwo").tilt({glare: false,maxTilt: 6,scale: 1.1});
