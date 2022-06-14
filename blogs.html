@@ -13,10 +13,16 @@
     var r = document.querySelector(':root');
     var rs = getComputedStyle(r);
     rs.getPropertyValue('--bgimage')
-    fetch('https://source.unsplash.com/random/1920x1080').then((response) =>{
+    var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+    if (width<=900){
+    fetch('https://source.unsplash.com/random/1080x1920').then((response) =>{
         image = document.getElementById("bruh").src = response.url
-        r.style.setProperty('--bgimage', "url("+response.url+")")
-    });</script>
+        r.style.setProperty('--bgimage', "url("+response.url+")")})} else {
+        fetch('https://source.unsplash.com/random/1920x1080').then((response) =>{
+            image = document.getElementById("bruh").src = response.url
+            r.style.setProperty('--bgimage', "url("+response.url+")")})       
+        }
+    </script>
 </head>
 <body onload="load()">
     <img id="bruh" style="display:none;" >
