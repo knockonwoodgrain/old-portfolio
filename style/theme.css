@@ -125,7 +125,7 @@ body{margin: 0px;
     width: fit-content; 
     height: fit-content; 
     margin: 3.5vw;
-    margin-top: 0px;
+    margin-top: 2vw;
     margin-bottom: 0px;
     background: var(--bgcolor-glass);
     box-shadow: 0 10px 16px 0px var(--boxshadow);
@@ -165,7 +165,7 @@ body{margin: 0px;
         -webkit-font-smoothing: antialiased;}
     /*-----------------------------------------------------------------------------*/
     /*Gallery----------------------------------------------------------------------*/
-    #gallery{margin-bottom: 2vw; max-width: fit-content;display:flex;flex-direction:row;flex-wrap: wrap; align-items:center;justify-items:center;}
+    #gallery{margin-bottom: 5vw; max-width: fit-content;display:flex;flex-direction:row;flex-wrap: wrap; align-items:center;justify-items:center;}
     .image{display: flex; 
         flex-wrap: wrap; 
         height: 24vw; 
