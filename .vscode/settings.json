@@ -1,0 +1,9 @@
+{
+    "css.validate": true,
+    "html.validate.styles": true,
+    "html.validate.scripts": true,
+    "css.completion.completePropertyWithSemicolon": true,
+    "css.format.enable": true,
+    "css.lint.argumentsInColorFunction": "error",
+    "css.lint.emptyRules": "ignore"
+}

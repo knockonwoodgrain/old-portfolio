@@ -99,7 +99,7 @@ body{
 
 
 /*Glass ------------------------------------------------------------------------------------------------------*/
-@media (max-width:900px){
+@media (max-width:900px){}
 .glass {padding: 1.5vw;
     display: flex;
     flex-direction:column;
@@ -135,25 +135,74 @@ body{
         margin-bottom: 4vw;
         min-width: fit-content;
         border-radius: 0;}
-    #gallery{margin-bottom: 2vw; 
-        display:flex;
-        flex-direction:row;
+    
+    /*------------------------------------------------------------------------------------------------------------------------*/
+    /*Archive------------------------------------------------------------------------------------------------------*/
+    .page{display: flex; 
         flex-wrap: wrap; 
-        align-items:center;
-        border-radius: 0px;
-        justify-items:center;}
-    .image{display: flex; 
-        flex-wrap: wrap; 
-        width: 94vw; 
-        border-radius: 4vw; 
-        box-shadow: 0 5px 16px 0px var(--boxshadow);
+        max-width: 90vw; 
+        border-radius: 3vw; 
         border: solid 3px var(--hoverborder);
         margin: 1vw; }
-    /*------------------------------------------------------------------------------------------------------------------------*/
+    /*Gallery------------------------------------------------------------------------------------------------------*/
+    #gallery{margin-bottom: 2vw; 
+        display:flex;
+        flex-direction:column
+        flex-wrap: wrap; 
+        border-radius: 0px;
+        justify-items:center;}
+    .contentbox{display:flex;flex-direction:row;flex-wrap: wrap}
+    .image{display: flex; 
+        flex-wrap: wrap; 
+        max-width: 90vw; 
+        border-radius: 3vw; 
+        border: solid 3px var(--hoverborder);
+        margin: 1vw; }
+    .galleryheading{margin-top: 0; margin-bottom: 1vw; font-size: 6.5vw; font-weight: 500;color: var(--textcolor);}
+    .imagecontainer{display:flex; flex-direction:column;align-items: flex-start;position:relative;}
+    .gallerybox {display:flex;flex-direction:column;padding-left: 1vw;
+            padding-right: 1vw;
+            padding-bottom: 1vw;
+            padding-top: 3vw;
+            text-align: center;
+            max-width: fit-content;
+            margin:2vw;
+            font-size: 6vw;
+            color: var(--textcolor);
+            background: var(--blogbackground);
+            box-shadow: 0 5px 16px 0px var(--boxshadow);
+            border-radius: 4vw;  
+            border: solid 0.2px var(--paraborder);  
+            transition: 0.04s;
+            overflow: hidden;}
+    .caption{    font-family: "Futura";
+        display:inline-flex;
+        position:absolute;
+        bottom:0vw;
+        padding: 1vw;
+        border-radius: 1vw;
+        background-color: var(--blogbackground);
+        font-size: 3.5vw;
+        margin:3vw;
+        text-align:justify;
+        text-shadow:0px 1px 19px var(--parashadow);
+        transform: translate3d(20px);
+        -webkit-font-smoothing: antialiased;color: var(--textcolor);}
+    .ingallerytext {
+        font-family: "Futura";
+        font-size: 4vw;
+        margin:3vw;
+        height:fit-content;
+        text-align:justify;
+        color: var(--textcolor);
+        text-shadow:0px 1px 19px var(--parashadow);
+        transform: translate3d(20px);
+        -webkit-font-smoothing: antialiased;}
+
     
     /*Normal Glass Boxes------------------------------------------------------------------------------------------------------*/
-    .texxttext{margin-top: 0.25ch; margin-bottom: auto; }
-    .texxt {min-width: fit-content;
+    .boxheadingtext{margin-top: 0.25ch; margin-bottom: auto; }
+    .boxheading {max-width: fit-content;min-width: fit-content;
         padding-left: 3vw;
         padding-right: 3vw;
         padding-top: 1vw;
@@ -185,7 +234,7 @@ body{
         /*----------------------------------------------------------------------------------------------------------*/
 
         /*Blog------------------------------------------------------------------------------------------------------*/
-        .texxst {padding-left: 3vw;
+        .boxinsidebox {padding-left: 3vw;
             padding-right: 3vw;
             padding-bottom: 1vw;
             padding-top: 3vw;
@@ -264,7 +313,6 @@ body{
                 border: solid 1px #ffffff00;
                 overflow: hidden;}
 /*------------------------------------------------------------------------------------------------------*/
-/*AppStuff-------------------------------------------------------------------------------------*/
 .appflex{display: flex;flex-direction: column;}
 .appbox{max-width: max-content;
         margin: 3vw;
@@ -288,8 +336,7 @@ body{
     width: 11vw;
     height: 11vw;
     border-radius: 3vw;
-    margin: 1vw;
-}
+    margin: 1vw;}
 #blackhole{padding: 2vw;background-color: black;}
 #stremio{padding:2vw;background-color: #201f32;}
 #saikou{background-color: #1a222e;}
@@ -309,9 +356,9 @@ body{
 /*-------------------------------------------------------------------------------------*/
 
 /*-------------------------------------------------------------------------------*/
-.texxttext:hover{transform: translateZ(20px) }
-.texxt:hover{transform: translateZ(20px) }
-.texxst:hover, .texxt:hover, .appbox:hover{ animation-name: scale; animation-duration: 0.69s; animation-iteration-count: 1;}
+.boxheadingtext:hover{transform: translateZ(20px) }
+.boxheading:hover{transform: translateZ(20px) }
+.boxinsidebox:hover, .boxheading:hover, .appbox:hover{ animation-name: scale; animation-duration: 0.69s; animation-iteration-count: 1;}
 #blog:hover, #educationblog:hover, #FOSSblog:hover{animation: none;}
 .glass:hover,.glass:active,.glass:focus{animation-name: scale1; animation-duration: 0.69s; animation-iteration-count: 1;}
 @keyframes scale{
