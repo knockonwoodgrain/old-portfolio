@@ -7,9 +7,53 @@ font-weight: normal;
 font-style: normal;
 }
 @font-face {
-font-family: Helvetica Neue;
+font-family: Times New Roman;
+src: url('timesbd.ttf');
+font-weight: bold;
+font-style: normal;
+}
+@font-face {
+font-family: Playfair Display Semibold Italic;
+src: url('PlayfairDisplay-SemiBoldItalic.ttf');
+font-weight: bold;
+font-style: italic;
+}
+@font-face {
+font-family:Gambarino;
+src: url('Gambarino-Regular.otf');
+font-weight: bold;
+font-style: normal;
+}
+@font-face {
+font-family: Playfair Display Bold;
+src: url('PlayfairDisplay-Bold.ttf');
+font-weight: bold;
+font-style: normal;
+}
+@font-face {
+font-family: Helvetica Neue Extended;
 src: url('HelveticaNeueLTStd-BlkEx.otf');
 font-weight: bold;
+font-style: normal;
+}
+@font-face {
+font-family: Soria ;
+src: url('soria-font.ttf');
+font-kerning:none;
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: Helvetica Neue ;
+src: url('HelveticaNeueLTStd-Roman.otf');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: Fira Sans;
+src: url('FiraSans-Regular.ttf');
+font-weight: normal;
 font-style: normal;
 }
 .glass.dark-theme{
@@ -31,7 +75,7 @@ body{margin: 0px;
     padding: 0em;
     min-height: 100%;
     color: var(--textcolor);
-    font-family: 'Helvetica Neue', 'sans-serif';
+    font-family: var(--heading-font), 'serif';
     overflow:overlay;
     background-image: var(--bgimage);
     background-position: center;
@@ -119,7 +163,7 @@ body{margin: 0px;
 
 
 /*------------------------------------------------------------------------------------------------------*/
-.glass {padding: 1.0vw;
+.glass {padding: 3.0vw;
     display:flex;
     flex-direction:column;
     width: fit-content; 
@@ -141,13 +185,13 @@ body{margin: 0px;
     align-items: center;}
     .glasses{width:100%;justify-content: space-between;display:flex; flex-direction:row;align-items:center;}
     /*Normal Glass Boxes-------------------------------------------------------------*/
-    .boxheadingtext{margin-top: 0.25ch; margin-bottom: auto; }
+    .boxheadingtext{margin-top: 0; margin-bottom: auto; }
     .boxheading {display:flex;min-width:fit-content; 
 	    max-width:fit-content;
 	    margin:0.5vw;
         padding-left: 1vw;
         padding-right: 1vw;
-        font-size: 3vw; 
+        font-size: 3.8vw; 
         text-align: center;
         color: var(--textcolor);
         background: var(--blogbackground);
@@ -155,7 +199,7 @@ body{margin: 0px;
         border-radius: 1.5vw;  
         border: solid 0.2px var(--paraborder);  transform-style: preserve-3d; transform: perspective(1000px);}
     .para {
-        font-family: "Futura";
+        font-family: var(--body-font);
         font-size: 1.5vw; 
 	    margin-top:1vw;margin-bottom:1vw;
         color: var(--paracolor);
@@ -174,23 +218,23 @@ body{margin: 0px;
         transition: var(--transition);
         margin: 0.5vw;}
     /*Gallery----------------------------------------------------------------------*/
-    #gallery{margin-bottom: 5vw; max-width: fit-content;display:flex;flex-direction:row;flex-wrap: wrap; align-items:center;justify-items:center;}
+    #gallery{padding:1vw;margin-bottom: 5vw; max-width: fit-content;display:flex;flex-direction:row;flex-wrap: wrap; align-items:center;justify-items:center;}
     .imagecontainer{display:inline-flex; flex-direction:column; position:relative;}
     .incontainer{display:inline-flex;bottom:0vw;}
     .galleryheading{
-            margin-top: 0;
+            margin-top: 4vw;
             font-size: 3vw;
             font-weight: 600;
             color: var(--paracolor);transition: var(--transition);}
     .ingallerytext {
-            font-family: "Futura";
+            font-family: var(--body-font);
             display: inherit;
             margin: 1vw;
-            font-size: 2vw; 
+            font-size: 1.5vw; 
             color: var(--paracolor);
             text-shadow:0px 1px 19px var(--parashadow);
             text-align: justify;transition: var(--transition);}
-    .caption{    font-family: "Futura";
+    .caption{    font-family: var(--body-font);
         font-size: 1.5vw; 
         margin-top:1vw;margin-bottom:1vw;
         color: var(--paracolor);
@@ -209,7 +253,7 @@ body{margin: 0px;
     .imagecontainer:hover > .caption{visibility:visible;opacity:1;transition-delay: 0s;}
     .contentbox{display:flex;flex-direction:row;flex-wrap: wrap}
     .gallerybox{max-width: max-content;
-        padding: 1vw;
+        padding: 2vw;
         text-align: center;
         font-size: 3vw;
         color: var(--textcolor);
@@ -224,15 +268,15 @@ body{margin: 0px;
         flex-direction: column;}
     .image{display: flex; 
         flex-wrap: wrap; 
-        height: 24vw; 
-        border-radius: 2vw; 
+        height: 27vw; 
+        border-radius: 1vw; 
         box-shadow: 0 5px 16px 0px var(--boxshadow);
         border: solid 3px var(--imageborder); 
         transition: var(--transition);
         margin: 0.5vw; }
     /*Blog-------------------------------------------------------------------------*/
     .boxinsidebox {max-width: max-content;
-        padding: 1vw;
+        padding: 1.5vw;
         text-align: center;
         font-size: 3vw;
         color: var(--textcolor);
@@ -242,7 +286,7 @@ body{margin: 0px;
         transition:0; 
         transform-style: preserve-3d;}
         .blog {
-            font-family: "Futura";
+            font-family: var(--body-font);
             display: inherit;
             margin-bottom: 0;
             font-size: 1.2vw; 
@@ -250,7 +294,7 @@ body{margin: 0px;
             text-shadow:0px 1px 19px var(--parashadow);
             text-align: justify;transition: var(--transition);}
         .inblogtext {
-            font-family: "Futura";
+            font-family: var(--body-font);
             display: inherit;
             margin-bottom: 0;
             font-size: 1.2vw; 
@@ -295,7 +339,7 @@ body{margin: 0px;
         #blog{margin-bottom: 2vw; min-width: 90%;display:flex;flex-direction:row;align-items:center;justify-items:center;border-radius:3vw;padding: 1vw;}
             .more{display: none;
                 font-size: 1.2vw;
-                font-family: "Futura";
+                font-family: var(--body-font);
                 text-align: justify; color: var(--paracolor);margin-bottom: 0;}
             /*Read More Button---------------------------------------------------------------*/
             .readmore{position: relative;

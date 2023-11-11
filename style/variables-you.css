@@ -16,6 +16,8 @@
    --readmore:hsla(var(--accent-hue), 46%, 67%, 0.816);
    --readmore-text: hsl(var(--accent-hue), 100%, 11%);
    --imageborder:hsl(var(--accent-hue), 46%, 67%);
+   --heading-font:"Playfair Display Bold";
+   --body-font:"Helvetica Neue";
    --bgimage: url("https://source.unsplash.com/random/1920x1080");
    --transition: 0.2s;
 }

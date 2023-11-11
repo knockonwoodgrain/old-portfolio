@@ -16,4 +16,6 @@
     --imageborder:var(--hoverborder);
     --bgimage:url(https://media.discordapp.net/attachments/794971234030059541/961993343217311744/Renderone.png);
     --transition:0.1s;
+    --heading-font:"Playfair Display Bold";
+    --body-font:"Helvetica Neue";
 }   
