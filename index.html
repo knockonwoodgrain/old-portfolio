@@ -276,13 +276,13 @@
     var images = ['1.webp','2.webp','3.webp','4.webp','5.webp','6.webp','7.webp','8.webp'];
     var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     var random = images[(Math.floor(Math.random() * images.length))]
-    var randombruhp = (" assets/Backgrounds/Portrait/" + random);
-    var randombruhl = (" assets/Backgrounds/Landscape/" + random);
+    var randombruhp = ("assets/Backgrounds/Portrait/" + random);
+    var randombruhl = ("assets/Backgrounds/Landscape/" + random);
     if (width <= 900) {
-        r.style.setProperty("--bgimage", "url(../ assets/Backgrounds/Portrait/" + random + ")");
+        r.style.setProperty("--bgimage", "url(../assets/Backgrounds/Portrait/" + random + ")");
         document.getElementById("bruh").src = randombruhp;
     } else {
-        r.style.setProperty("--bgimage", "url(../ assets/Backgrounds/Landscape/" + random + ")");
+        r.style.setProperty("--bgimage", "url(../assets/Backgrounds/Landscape/" + random + ")");
         document.getElementById("bruh").src = randombruhl;
     }
 
