@@ -3,7 +3,7 @@
    --parashadow:hsla(0, 0%, 0%, 0.451);
    --blogbackground:hsl(var(--accent-hue), 46%, 67%);
    --blogbox:hsla(var(--accent-hue), 30%, 7%, 0.8);
-   --boxshadow:hsla(var(--accent-hue), 0%, 0%, 0.6);
+   --boxshadow:hsla(var(--accent-hue),50%, 11%, 0.6);
    --paraborder:hsla(var(--accent-hue), 100%, 71%, 0);
    --textcolor:hsl(var(--accent-hue), 100%, 11%);
    --paracolor:hsl(var(--accent-hue), 47%, 82%);
@@ -18,7 +18,7 @@
    --imageborder:hsl(var(--accent-hue), 46%, 67%);
    --heading-font:"Playfair Display Bold";
    --body-font:"Helvetica Neue";
-   --bgimage: url("https://source.unsplash.com/random/1920x1080");
+   --bgimage: url("../Assets/Backgrounds/Landscape/2.webp") ;
    --transition: 0.2s;
 }
  /*--blogbackground:hsl(88, 46%, 67%);

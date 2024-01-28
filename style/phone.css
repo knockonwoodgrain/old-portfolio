@@ -1,14 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700&display=swap');
 @font-face {
-font-family: Helvetica Neue;
+font-family: Futura;
+src: url('Futura.ttf');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: Times New Roman;
+src: url('timesbd.ttf');
+font-weight: bold;
+font-style: normal;
+}
+@font-face {
+font-family: Playfair Display Semibold Italic;
+src: url('PlayfairDisplay-SemiBoldItalic.ttf');
+font-weight: bold;
+font-style: italic;
+}
+@font-face {
+font-family:Gambarino;
+src: url('Gambarino-Regular.otf');
+font-weight: bold;
+font-style: normal;
+}
+@font-face {
+font-family: Playfair Display Bold;
+src: url('PlayfairDisplay-Bold.ttf');
+font-weight: bold;
+font-style: normal;
+}
+@font-face {
+font-family: Helvetica Neue Extended;
 src: url('HelveticaNeueLTStd-BlkEx.otf');
 font-weight: bold;
 font-style: normal;
 }
 @font-face {
-font-family: Futura;
-src: url('Futura.ttf');
+font-family: Soria ;
+src: url('soria-font.ttf');
+font-kerning:none;
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: Helvetica Neue ;
+src: url('HelveticaNeueLTStd-Roman.otf');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: Fira Sans;
+src: url('FiraSans-Regular.ttf');
 font-weight: normal;
 font-style: normal;
 }
@@ -22,7 +66,8 @@ font-style: normal;
   'GRAD' 0,
   'opsz' 48
 }
- * {box-sizing:border-box;justify-content:center;
+a{text-decoration: none;}
+ * {justify-content:center;
     text-align: center;
     align-items: center;}
 body{
@@ -30,7 +75,7 @@ body{
     padding: 0em;
     color: rgb(216, 216, 216);
     min-height: 100%;
-    font-family: 'Helvetica Neue';
+    font-family: var(--heading-font);
     overflow: overlay;
     background-image: var(--bgimage);
     background-position: center;
@@ -76,19 +121,26 @@ body{
 
 
 /*-----------------------------------------------------------------------------------------------------------------*/
-.buttton{display:flex;
-    min-width: fit-content;
+.buttongroup{display: flex; flex-direction: row;}
+.social{height:7.3vw ;fill: var(--textcolor);}
+#ytlogo{padding-top:1vw;padding-bottom: 1vw;height: 5.3vw;}
+.download{height:9.8vw ;fill: var(--textcolor);}
+.open{width:9.2vw ;fill: var(--textcolor);}
+.openbutton{margin: 0;}
+.socialbutton{text-decoration: none;}
+.buttton{display:flex; min-width: fit-content;
     max-width: fit-content; 
     outline: none;
-    cursor: pointer;
+    padding: 1.3vw; margin-left: 1.5vw; cursor: pointer;
     background-color: var(--blogbackground);
     box-shadow: 0 10px 12px 0px var(--boxshadow); 
-    border-radius: 3.4vw;
+    border-radius: 3.2vw;
     border: solid 0.5px var(--hoverborder);
     backdrop-filter: blur( 30.0px ); -webkit-backdrop-filter: blur( 10.0px );
     z-index: 999;}
-    #buttontext{font-size: 8.2vw;}
-    .btn-toggle{padding: 0.3vw;
+    .openbuttontext, #dkbutton{font-size: 8.2vw !important; color: var(--textcolor);}
+    .btn-toggle{
+        display: flex;
         margin: 0;
         cursor: pointer;
         outline: none;
@@ -100,21 +152,22 @@ body{
 
 /*Glass ------------------------------------------------------------------------------------------------------*/
 @media (max-width:900px){}
+#tDbox{align-items: stretch;}
+#objfit{object-fit: cover; height: 100%;}
 .glass {padding: 1.5vw;
+    padding-top: 5vw;
     display: flex;
     flex-direction:column;
     background: var(--bgcolor-glass);
     box-shadow: 0 10px 16px 0px var(--boxshadow);
-    border-radius: 6vw;
     border: solid 3px rgba(255, 255, 255, 0);
     border: solid 1.69px rgba(78, 78, 78, 0.192);
     backdrop-filter: blur( 30.0px );-webkit-backdrop-filter: blur( 10.0px );
+    margin-bottom: 4vh;
     z-index: 99;
     text-align: justify;}
-    .glasses{justify-content:center;display:flex; flex-direction:row;align-items:center; min-height: 100%; min-width: 100vw;}
-    #socialmedia{min-width: 100%; 
-        margin-left: 0; 
-        margin-right: 0;}
+    .glasses{justify-content:center;display:flex; flex-direction:column;align-items:flex-start; min-height: 100%; min-width: 100%;}
+    .projects{justify-content:center;display:flex; flex-direction:row;align-items:center; min-height: 100%; min-width: 100%;}
     #glassone, #glasstwo {display: flex; 
         align-items:center; 
         justify-content:space-evenly; 
@@ -132,25 +185,26 @@ body{
         position:relative;
         border: 0px;
         padding: 1.5vw;
-        margin-bottom: 4vw;
         min-width: fit-content;
         border-radius: 0;}
     
     /*------------------------------------------------------------------------------------------------------------------------*/
     /*Archive------------------------------------------------------------------------------------------------------*/
-    .page{display: flex; 
+    .untitledpg,.anim,.photopg{display: flex; 
+        box-sizing: border-box;
         flex-wrap: wrap; 
-        max-width: 90vw; 
+        max-width: calc(100% - 2vw); 
+        border-radius: 3vw; 
+        border: solid 3px var(--hoverborder);
+        margin: 1vw; }
+    .page,.sdppg,.igorpg{display: flex; 
+        flex-wrap: wrap; 
+        max-width: 44.5vw; 
         border-radius: 3vw; 
         border: solid 3px var(--hoverborder);
         margin: 1vw; }
     /*Gallery------------------------------------------------------------------------------------------------------*/
-    #gallery{margin-bottom: 2vw; 
-        display:flex;
-        flex-direction:column
-        flex-wrap: wrap; 
-        border-radius: 0px;
-        justify-items:center;}
+    .pmode{width: calc(50% - 2vw);}
     .contentbox{display:flex;flex-direction:row;flex-wrap: wrap}
     .image{display: flex; 
         flex-wrap: wrap; 
@@ -158,24 +212,10 @@ body{
         border-radius: 3vw; 
         border: solid 3px var(--hoverborder);
         margin: 1vw; }
-    .galleryheading{margin-top: 0; margin-bottom: 1vw; font-size: 6.5vw; font-weight: 500;color: var(--textcolor);}
-    .imagecontainer{display:flex; flex-direction:column;align-items: flex-start;position:relative;}
-    .gallerybox {display:flex;flex-direction:column;padding-left: 1vw;
-            padding-right: 1vw;
-            padding-bottom: 1vw;
-            padding-top: 3vw;
-            text-align: center;
-            max-width: fit-content;
-            margin:2vw;
-            font-size: 6vw;
-            color: var(--textcolor);
-            background: var(--blogbackground);
-            box-shadow: 0 5px 16px 0px var(--boxshadow);
-            border-radius: 4vw;  
-            border: solid 0.2px var(--paraborder);  
-            transition: 0.04s;
-            overflow: hidden;}
-    .caption{    font-family: "Futura";
+    .galleryheading{margin-top: 0; margin-bottom: 1vw; font-size: 6.5vw; font-weight: 500;color: var(--blogbackground);}
+    .imagecontainer,.untitledcontain,.animcontain,.sdpcontain,.igorcontain,.photocontain,.photocontainl{display:flex; flex-direction:column;align-items: flex-start;position:relative;}
+    .smallcaps{font-size:3vw;}
+    .caption{font-family: var(--body-font);
         display:inline-flex;
         position:absolute;
         bottom:0vw;
@@ -188,31 +228,19 @@ body{
         text-shadow:0px 1px 19px var(--parashadow);
         transform: translate3d(20px);
         -webkit-font-smoothing: antialiased;color: var(--textcolor);}
-    .ingallerytext {
-        font-family: "Futura";
-        font-size: 4vw;
-        margin:3vw;
-        height:fit-content;
-        text-align:justify;
-        color: var(--textcolor);
-        text-shadow:0px 1px 19px var(--parashadow);
-        transform: translate3d(20px);
-        -webkit-font-smoothing: antialiased;}
-
     
     /*Normal Glass Boxes------------------------------------------------------------------------------------------------------*/
-    .boxheadingtext{margin-top: 0.25ch; margin-bottom: auto; }
     .boxheading {max-width: fit-content;min-width: fit-content;
         padding-left: 3vw;
         padding-right: 3vw;
         padding-top: 1vw;
         padding-bottom: 1vw;
 	    margin:1.5vw;
-        font-size:5vw;
+        font-size:8vw;
         text-align: center;
         color: var(--textcolor);
         background: var(--blogbackground);
-        box-shadow: 0 5px 16px 0px var(--boxshadow);
+        box-shadow: 2px 4px 31px 0px var(--boxshadow);
         border-radius: 3.4vw; 
         border: solid 0.2px var(--paraborder);   
         transition: 0.04s;
@@ -220,13 +248,13 @@ body{
         -webkit-font-smoothing: antialiased;}
     #stats{width: 13vw;}
     #socialheading{width: 1vw;}
-    #parth{width: 13vw}
     .para {
-        font-family: "Futura";
+        font-family: var(--body-font);
         font-size: 4vw;
-        margin-top:1vw;
+        margin: 2.5vw;
 	    height:fit-content;
-        text-align:justify;
+        text-align:left;
+        hyphens: auto;
         color: var(--paracolor);
         text-shadow:0px 1px 19px var(--parashadow);
         transform: translate3d(20px);
@@ -267,7 +295,7 @@ body{
             transition: 0.4s;
             overflow: hidden;}
             .inblogtext{
-                font-family: "Futura";
+                font-family: var(--body-font);
                 color: var(--textcolor);
                 text-shadow:0px 1px 19px var(--parashadow);
                 transform: translate3d(20px);
@@ -354,19 +382,3 @@ body{
         text-shadow:0px 1px 19px var(--parashadow);
         text-align: justify;transition: var(--transition);}
 /*-------------------------------------------------------------------------------------*/
-
-/*-------------------------------------------------------------------------------*/
-.boxheadingtext:hover{transform: translateZ(20px) }
-.boxheading:hover{transform: translateZ(20px) }
-.boxinsidebox:hover, .boxheading:hover, .appbox:hover{ animation-name: scale; animation-duration: 0.69s; animation-iteration-count: 1;}
-#blog:hover, #educationblog:hover, #FOSSblog:hover{animation: none;}
-.glass:hover,.glass:active,.glass:focus{animation-name: scale1; animation-duration: 0.69s; animation-iteration-count: 1;}
-@keyframes scale{
-    0% {}
-    50% {transform: scale(1.1);background: var(--hoverlight);}
-    100% {}}
-@keyframes scale1{
-    0% {}
-    50% {transform: scale(1.1);background: rgba(0, 0, 0, 0);}
-    100% {}}
-/*-------------------------------------------------------------------------------*/

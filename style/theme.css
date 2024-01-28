@@ -59,6 +59,13 @@ font-style: normal;
 .glass.dark-theme{
     background-color: rgba(0, 0, 0, 0.452);
 }
+.material-symbols-arrow {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 40
+}
 .material-symbols-rounded {
   font-variation-settings:
   'FILL' 1,
@@ -71,7 +78,8 @@ font-style: normal;
     align-items: center;}
 body{margin: 0px;
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
+    flex-wrap: wrap;
     padding: 0em;
     min-height: 100%;
     color: var(--textcolor);
@@ -81,6 +89,7 @@ body{margin: 0px;
     background-position: center;
     background-size:cover;
     background-attachment: fixed;
+    align-items:stretch;
     transition: 0.2s;}
     .textcolor{color: var(--paracolor);
 	flex-direction:row;}
@@ -135,42 +144,54 @@ body{margin: 0px;
 
 
 /*Toggle Theme--------------------------------------------------------------------------------*/
+.buttongroup{display:flex; flex-direction: row; align-items: stretch;}
 .buttton{
     display: flex;
     outline: none;cursor: pointer;
     max-width: fit-content;
     max-height: fit-content;
     padding: 0.5vw;
+    margin: 0.5vw;
     border-radius: 1.2vw;
     border: solid 1.5px var(--hoverborder);
     box-shadow: 0 5px 16px 0px var(--boxshadow);
     background-color: var(--buttonbackground);
     transform-style: preserve-3d;
     transform: perspective(1000px);}
-    #indexbutton{margin:0.5vw;text-align:center;right: 0;left: 0;transform-style: preserve-3d;
-    transform: perspective(1000px);}
-    #buttontext{font-size: 3vw;padding:0;}
+    #dkbutton{font-size: 3.4vw;padding:0.1vw;}
+    .social{padding:0;height: 3vw;fill: var(--textcolor);}
+    #ytlogo{padding-top: 0.4vw;padding-bottom:0.4vw;height: 3vw;}
+    .download{padding:0;width: 4.4vw;fill: var(--textcolor);align-self: stretch;flex-grow: 1;}
+    #downloadbutton{padding: 0.4vw; border-radius: 1.5vw;}
+    .open{width: 4.2vw !important;padding:0;fill: var(--textcolor);}
+    .socialbutton{font-size: 3.5vw !important;padding:0.5vw;fill: var(--textcolor);}
     .btn-toggle{display: inline;
+        aspect-ratio : 1 / 1;
         cursor: pointer;
         font-weight: bolder; 
         background-color: #00000000;
         color: var(--textcolor);
+        fill: var(--textcolor);
         border: none;
-        outline: none;padding: 0;transform:translateZ(20px);}
+        outline: none;padding: 0;}
     #themeimage{display: none;}
     .btn-toggle-phone{display: none;}
 /*------------------------------------------------------------------------------------------------------*/
 
 
 /*------------------------------------------------------------------------------------------------------*/
+#vdkglass,#postemberglass,#trglass{width: calc(50% - 3vw);}
+.glasscontain{display: flex;flex-direction: column; width: 50%;}
+
+#mouseglass{margin-bottom:1vw}
+#tDglass{margin-top:1vw}
 .glass {padding: 3.0vw;
     display:flex;
     flex-direction:column;
-    width: fit-content; 
-    height: fit-content; 
-    margin: 3.5vw;
+    max-width: fit-content; 
+    margin: 1.5vw;
     margin-top: 2vw;
-    margin-bottom: 0px;
+    margin-bottom: 2vw;
     background: var(--bgcolor-glass);
     box-shadow: 0 10px 16px 0px var(--boxshadow);
     backdrop-filter: blur( 45.0px );-webkit-backdrop-filter: blur( 10.0px );
@@ -180,12 +201,12 @@ body{margin: 0px;
     animation-name: fadeinglass;
     animation-duration: 1s;
     animation-iteration-count: 1;
-    justify-content:center;
+    justify-content:left;
     text-align: center;
     align-items: center;}
     .glasses{width:100%;justify-content: space-between;display:flex; flex-direction:row;align-items:center;}
+    .projects{width:100%;justify-content: center;display:flex; flex-direction:row;align-items:stretch;}
     /*Normal Glass Boxes-------------------------------------------------------------*/
-    .boxheadingtext{margin-top: 0; margin-bottom: auto; }
     .boxheading {display:flex;min-width:fit-content; 
 	    max-width:fit-content;
 	    margin:0.5vw;
@@ -197,49 +218,37 @@ body{margin: 0px;
         background: var(--blogbackground);
         box-shadow: 0 5px 16px 0px var(--boxshadow);
         border-radius: 1.5vw;  
-        border: solid 0.2px var(--paraborder);  transform-style: preserve-3d; transform: perspective(1000px);}
+        border: solid 3px var(--paraborder);  transform-style: preserve-3d; transform: perspective(1000px);
+    transition: 0.2s;}
     .para {
         font-family: var(--body-font);
         font-size: 1.5vw; 
 	    margin-top:1vw;margin-bottom:1vw;
         color: var(--paracolor);
         text-shadow:0px 1px 19px var(--parashadow);
-        text-align:justify ;
+        text-align:left ;
         -webkit-font-smoothing: antialiased;}
     /*-----------------------------------------------------------------------------*/
-    /*Archive----------------------------------------------------------------------*/
-    #cover{min-width: 50vw}
-    .page{display: flex; 
-        flex-wrap: wrap; 
-        max-width:40vw; 
-        border-radius: 2vw; 
-        box-shadow: 0 5px 16px 0px var(--boxshadow);
-        border: solid 3px var(--imageborder); 
-        transition: var(--transition);
-        margin: 0.5vw;}
+    
     /*Gallery----------------------------------------------------------------------*/
-    #gallery{padding:1vw;margin-bottom: 5vw; max-width: fit-content;display:flex;flex-direction:row;flex-wrap: wrap; align-items:center;justify-items:center;}
-    .imagecontainer{display:inline-flex; flex-direction:column; position:relative;}
+    .imagecontainer{width:calc(50% - 1vw);display:inline-flex;flex-direction:column; position:relative; transition: var(--transition); margin: 0.5vw;}
+    #cover,#backcover{width:calc(55% - 1vw);}
+    .untitledcontain,.sdpcontain,.photocontainl{width:calc(33.3% - 1vw);display:inline-flex;flex-direction:column; position:relative; transition: var(--transition); margin: 0.5vw;}
+    .photocontain{width:calc(16.66% - 1vw);display:inline-flex;flex-direction:column; position:relative; transition: var(--transition); margin: 0.5vw;}
+    .igorcontain{width:calc(25% - 1vw);display:inline-flex;flex-direction:column; position:relative; transition: var(--transition); margin: 0.5vw;}
+    .animcontain{display:inline-flex;flex-direction:column; position:relative; transition: var(--transition); margin: 0.5vw;}
     .incontainer{display:inline-flex;bottom:0vw;}
     .galleryheading{
-            margin-top: 4vw;
+            margin: 0;
             font-size: 3vw;
             font-weight: 600;
             color: var(--paracolor);transition: var(--transition);}
-    .ingallerytext {
-            font-family: var(--body-font);
-            display: inherit;
-            margin: 1vw;
-            font-size: 1.5vw; 
-            color: var(--paracolor);
-            text-shadow:0px 1px 19px var(--parashadow);
-            text-align: justify;transition: var(--transition);}
     .caption{    font-family: var(--body-font);
         font-size: 1.5vw; 
         margin-top:1vw;margin-bottom:1vw;
         color: var(--paracolor);
         text-shadow:0px 1px 19px var(--parashadow);
-        text-align:justify ;
+        text-align:left ;
         -webkit-font-smoothing: antialiased;visibility:hidden; 
         position:absolute; 
         padding:0.5vw; 
@@ -251,29 +260,33 @@ body{margin: 0px;
         opacity:0; 
         transition:visibility 0s linear 0.33s, opacity 0.33s ;}
     .imagecontainer:hover > .caption{visibility:visible;opacity:1;transition-delay: 0s;}
-    .contentbox{display:flex;flex-direction:row;flex-wrap: wrap}
-    .gallerybox{max-width: max-content;
-        padding: 2vw;
-        text-align: center;
-        font-size: 3vw;
-        color: var(--textcolor);
-        background:var(--blogbox); 
-        box-shadow: 0 5px 16px 0px var(--boxshadow);
-        border: solid 0.2px var(--paraborder);
-        transition:0; 
-        transform-style: preserve-3d;
+    .contentbox{display:flex;flex-direction:row;flex-wrap: wrap;}
+    .spacebetween{margin-top: 2vw;}
+    #tDbox{align-items: stretch;}
+    #objfit{object-fit: cover; height: 100%;}
+    #stairs{height: 47vw;}
+    .anim{display: flex; 
+        flex-wrap: wrap; 
+        height: 38vw;
+        border: solid 3px var(--imageborder); 
         border-radius: 2vw;
-        margin: 0.7vw; 
-        display:flex; 
-        flex-direction: column;}
-    .image{display: flex; 
+        box-shadow: 0 5px 16px 0px var(--boxshadow);}
+    .page,.untitledpg,.image,.sdppg,.igorpg,.photopg{display: flex; 
+        object-fit: cover; height: 100%;
+        flex-wrap: wrap; 
+        width: 100%;
+        border: solid 3px var(--imageborder); 
+        border-radius: 1vw;
+        box-shadow: 0 5px 16px 0px var(--boxshadow);
+   }
+    /*.image{display: flex; 
         flex-wrap: wrap; 
         height: 27vw; 
         border-radius: 1vw; 
         box-shadow: 0 5px 16px 0px var(--boxshadow);
         border: solid 3px var(--imageborder); 
         transition: var(--transition);
-        margin: 0.5vw; }
+        margin: 0.5vw; }*/
     /*Blog-------------------------------------------------------------------------*/
     .boxinsidebox {max-width: max-content;
         padding: 1.5vw;
@@ -283,7 +296,7 @@ body{margin: 0px;
         background:var(--blogbox); 
         box-shadow: 0 5px 16px 0px var(--boxshadow);
         border: solid 0.2px var(--paraborder);
-        transition:0; 
+        transition:0.2s; 
         transform-style: preserve-3d;}
         .blog {
             font-family: var(--body-font);
@@ -336,7 +349,6 @@ body{margin: 0px;
             font-weight: 600;
             color: var(--paracolor);transition: var(--transition);}
         /*Blog Text------------------------------------------------------------------------------*/
-        #blog{margin-bottom: 2vw; min-width: 90%;display:flex;flex-direction:row;align-items:center;justify-items:center;border-radius:3vw;padding: 1vw;}
             .more{display: none;
                 font-size: 1.2vw;
                 font-family: var(--body-font);
@@ -365,7 +377,7 @@ body{margin: 0px;
 /*AppStuff-------------------------------------------------------------------------------------*/
 .appflex{display: flex;flex-direction: row;}
 .appbox{max-width: max-content;
-        flex: 0 0 42vw;
+        flex: 50%;
         margin: 0.7vw;
         padding: 1vw;
         text-align: center;
@@ -412,8 +424,7 @@ body{margin: 0px;
         text-align: justify;transition: var(--transition);}
 /*-------------------------------------------------------------------------------------*/
 /*Hover Animations----------------------------------------------------------------------*/
-.boxheading:hover{transform: translateZ(20px);background-color: var(--hoverlight);
-    border: solid 3px var(--hoverborder);}
+.boxheading:hover{background-color: var(--hoverlight); border: solid 3px var(--hoverborder);}
 .glass:hover{background-color: var(--hovercolor);border: solid 3px var(--hoverborder);}
 .image:hover{border-radius: 1vw; border: solid 3px var(--hoverborder);}
     #glassone:hover,#glasstwo:hover,h3:hover,#glassoriginal:hover,h1:hover{box-shadow: 0 17px 16px 0px var(--boxshadow);}
@@ -423,9 +434,6 @@ body{margin: 0px;
             #Blogs:hover{border-radius: 5vw;background-color: var(--hoverlight);}
             .blogbox:hover{border: solid 3px var(--hoverborder);border-radius: 1.5vw;}
             #blog:hover{border-radius:2.4vw}
-            .boxinsidebox:hover > .blogheadingin{transform:translateZ(20px);}
-            .boxinsidebox:hover > .boxheadingtext{transform:translateZ(20px);}
-            .boxinsidebox:hover > .blog{transform:translateZ(10px);}
 .appicon:hover{transform: scale(1.3);}
 .appbox:hover{border-radius: 2vw;}
 @keyframes fadeinglass{
