@@ -18,7 +18,7 @@
    --imageborder:hsl(var(--accent-hue), 46%, 67%);
    --heading-font:"Playfair Display Bold";
    --body-font:"Helvetica Neue";
-   --bgimage: url("../Assets/Backgrounds/Landscape/2.webp") ;
+   --bgimage: url("../ assets/Backgrounds/Landscape/2.webp") ;
    --transition: 0.2s;
 }
  /*--blogbackground:hsl(88, 46%, 67%);
