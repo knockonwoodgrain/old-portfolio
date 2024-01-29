@@ -125,7 +125,7 @@ body{
 .social{height:7.3vw ;fill: var(--textcolor);}
 #ytlogo{padding-top:1vw;padding-bottom: 1vw;height: 5.3vw;}
 .download{height:9.8vw ;fill: var(--textcolor);}
-.open{width:9.2vw ;fill: var(--textcolor);}
+.open{width:6.2vw ;fill: var(--blogbackground);padding: 1vw; margin-left: 5vw; background: var(--buttonbackground); border-radius: 2vw;}
 .openbutton{margin: 0;}
 .socialbutton{text-decoration: none;}
 .buttton{display:flex; min-width: fit-content;
@@ -165,9 +165,10 @@ body{
     backdrop-filter: blur( 30.0px );-webkit-backdrop-filter: blur( 10.0px );
     margin-bottom: 4vh;
     z-index: 99;
-    text-align: justify;}
+    align-items: flex-start;
+    text-align:left;}
     .glasses{justify-content:center;display:flex; flex-direction:column;align-items:flex-start; min-height: 100%; min-width: 100%;}
-    .projects{justify-content:center;display:flex; flex-direction:row;align-items:center; min-height: 100%; min-width: 100%;}
+    .projects{justify-content:center;display:flex; flex-direction:column;align-items:flex-start; min-height: 100%; min-width: 100%;}
     #glassone, #glasstwo {display: flex; 
         align-items:center; 
         justify-content:space-evenly; 
@@ -213,7 +214,9 @@ body{
         border: solid 3px var(--hoverborder);
         margin: 1vw; }
     .galleryheading{margin-top: 0; margin-bottom: 1vw; font-size: 6.5vw; font-weight: 500;color: var(--blogbackground);}
-    .imagecontainer,.untitledcontain,.animcontain,.sdpcontain,.igorcontain,.photocontain,.photocontainl{display:flex; flex-direction:column;align-items: flex-start;position:relative;}
+    #cover{width: 50vw;align-self: center;align-items: center;}
+    .imagecontainer,.untitledcontain,.animcontain,.sdpcontain,.igorcontain,.photocontain{display:flex; flex-direction:column;align-items: flex-start;position:relative;}
+    .photocontainl{width: calc(50% - 2vw ); display:flex; flex-direction:column;align-items: flex-start;position:relative;}
     .smallcaps{font-size:3vw;}
     .caption{font-family: var(--body-font);
         display:inline-flex;
@@ -222,7 +225,7 @@ body{
         padding: 1vw;
         border-radius: 1vw;
         background-color: var(--blogbackground);
-        font-size: 3.5vw;
+        font-size: 2.5vw;
         margin:3vw;
         text-align:justify;
         text-shadow:0px 1px 19px var(--parashadow);
@@ -230,7 +233,9 @@ body{
         -webkit-font-smoothing: antialiased;color: var(--textcolor);}
     
     /*Normal Glass Boxes------------------------------------------------------------------------------------------------------*/
-    .boxheading {max-width: fit-content;min-width: fit-content;
+    .boxheading {display: flex;max-width: fit-content;min-width: fit-content;
+        flex-direction: row;
+        align-items: center;
         padding-left: 3vw;
         padding-right: 3vw;
         padding-top: 1vw;
@@ -248,7 +253,8 @@ body{
         -webkit-font-smoothing: antialiased;}
     #stats{width: 13vw;}
     #socialheading{width: 1vw;}
-    .para {
+    #frankhide{display: none;}
+    .para,.parabig {
         font-family: var(--body-font);
         font-size: 4vw;
         margin: 2.5vw;

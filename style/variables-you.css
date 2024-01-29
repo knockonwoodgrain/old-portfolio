@@ -1,17 +1,17 @@
 :root{
    --bgcolor-glass: hsla(var(--accent-hue),20%,15%,60%);
    --parashadow:hsla(0, 0%, 0%, 0.451);
-   --blogbackground:hsl(var(--accent-hue), 46%, 67%);
+   --blogbackground:hsl(var(--accent-hue), 66%, 67%);
    --blogbox:hsla(var(--accent-hue), 30%, 7%, 0.8);
    --boxshadow:hsla(var(--accent-hue),50%, 11%, 0.6);
    --paraborder:hsla(var(--accent-hue), 100%, 71%, 0);
    --textcolor:hsl(var(--accent-hue), 100%, 11%);
-   --paracolor:hsl(var(--accent-hue), 47%, 82%);
+   --paracolor:hsl(var(--accent-hue), 57%, 82%);
    --hoverborder:hsla(var(--accent-hue), 46%, 67%, 0.302);
    --hoverlight:hsl(var(--accent-hue), 57%, 79%);
    --glassborder:hsl(var(--accent-hue), 10%, 10%);
    --hovercolor:hsla(var(--accent-hue), 10%, 13%, 0.5);
-   --buttonbackground:hsl(var(--accent-hue), 46%, 67%);
+   --buttonbackground:hsla(var(--accent-hue), 100%, 11%, 0.9);
    --phonebuttonbackground:hsla(0, 0%, 75%, 0.609);
    --readmore:hsla(var(--accent-hue), 46%, 67%, 0.816);
    --readmore-text: hsl(var(--accent-hue), 100%, 11%);

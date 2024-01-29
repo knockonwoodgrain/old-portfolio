@@ -155,7 +155,7 @@ body{margin: 0px;
     border-radius: 1.2vw;
     border: solid 1.5px var(--hoverborder);
     box-shadow: 0 5px 16px 0px var(--boxshadow);
-    background-color: var(--buttonbackground);
+    background-color: var(--blogbackground);
     transform-style: preserve-3d;
     transform: perspective(1000px);}
     #dkbutton{font-size: 3.4vw;padding:0.1vw;}
@@ -163,7 +163,7 @@ body{margin: 0px;
     #ytlogo{padding-top: 0.4vw;padding-bottom:0.4vw;height: 3vw;}
     .download{padding:0;width: 4.4vw;fill: var(--textcolor);align-self: stretch;flex-grow: 1;}
     #downloadbutton{padding: 0.4vw; border-radius: 1.5vw;}
-    .open{width: 4.2vw !important;padding:0;fill: var(--textcolor);}
+    .open{width: 2.5vw !important;padding:0.3vw;fill: var(--blogbackground);box-sizing: content-box; margin-left: 2vw; background: var(--buttonbackground);opacity: 0.7vw;border-radius: 1vw;}
     .socialbutton{font-size: 3.5vw !important;padding:0.5vw;fill: var(--textcolor);}
     .btn-toggle{display: inline;
         aspect-ratio : 1 / 1;
@@ -203,9 +203,9 @@ body{margin: 0px;
     animation-iteration-count: 1;
     justify-content:left;
     text-align: center;
-    align-items: center;}
+    align-items:flex-start;}
     .glasses{width:100%;justify-content: space-between;display:flex; flex-direction:row;align-items:center;}
-    .projects{width:100%;justify-content: center;display:flex; flex-direction:row;align-items:stretch;}
+    .projects{width:100%;justify-content: center;display:flex; flex-direction:column;align-items:flex-start;}
     /*Normal Glass Boxes-------------------------------------------------------------*/
     .boxheading {display:flex;min-width:fit-content; 
 	    max-width:fit-content;
@@ -220,6 +220,15 @@ body{margin: 0px;
         border-radius: 1.5vw;  
         border: solid 3px var(--paraborder);  transform-style: preserve-3d; transform: perspective(1000px);
     transition: 0.2s;}
+    .paracontain{display: flex;flex-direction: row;align-items: flex-start;}
+    .paracolumn{display: flex; margin-left: 1vw;margin-right: 1vw; width: 50%;}
+    .parabig{font-family: var(--body-font);
+        font-size: 1.8vw; 
+	    margin-top:1vw;margin-bottom:1vw;
+        color: var(--paracolor);
+        text-shadow:0px 1px 19px var(--parashadow);
+        text-align:left ;
+        -webkit-font-smoothing: antialiased;}
     .para {
         font-family: var(--body-font);
         font-size: 1.5vw; 
@@ -232,10 +241,12 @@ body{margin: 0px;
     
     /*Gallery----------------------------------------------------------------------*/
     .imagecontainer{width:calc(50% - 1vw);display:inline-flex;flex-direction:column; position:relative; transition: var(--transition); margin: 0.5vw;}
+    .passcontain,.passmockupcontain{width:calc(100% - 1vw);display:inline-flex;flex-direction:column; position:relative; transition: var(--transition); margin: 0.5vw;}
     #cover,#backcover{width:calc(55% - 1vw);}
-    .untitledcontain,.sdpcontain,.photocontainl{width:calc(33.3% - 1vw);display:inline-flex;flex-direction:column; position:relative; transition: var(--transition); margin: 0.5vw;}
+    #cfgkey{width: calc(100% - 1vw);}
+    .untitledcontain,.photocontainl{width:calc(33.3% - 1vw);display:inline-flex;flex-direction:column; position:relative; transition: var(--transition); margin: 0.5vw;}
     .photocontain{width:calc(16.66% - 1vw);display:inline-flex;flex-direction:column; position:relative; transition: var(--transition); margin: 0.5vw;}
-    .igorcontain{width:calc(25% - 1vw);display:inline-flex;flex-direction:column; position:relative; transition: var(--transition); margin: 0.5vw;}
+    .igorcontain,.sdpcontain{width:calc(25% - 1vw);display:inline-flex;flex-direction:column; position:relative; transition: var(--transition); margin: 0.5vw;}
     .animcontain{display:inline-flex;flex-direction:column; position:relative; transition: var(--transition); margin: 0.5vw;}
     .incontainer{display:inline-flex;bottom:0vw;}
     .galleryheading{
@@ -271,7 +282,7 @@ body{margin: 0px;
         border: solid 3px var(--imageborder); 
         border-radius: 2vw;
         box-shadow: 0 5px 16px 0px var(--boxshadow);}
-    .page,.untitledpg,.image,.sdppg,.igorpg,.photopg{display: flex; 
+    .page,.untitledpg,.image,.sdppg,.igorpg,.photopg,.passpg,.passmockuppg{display: flex; 
         object-fit: cover; height: 100%;
         flex-wrap: wrap; 
         width: 100%;
