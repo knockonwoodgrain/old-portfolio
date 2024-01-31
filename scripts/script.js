@@ -18,6 +18,9 @@ btn.addEventListener("click", function () {
    theme.href = "style/variables-dark.css"
   }
 });
+
+
+
 $( "#edubutton" ).click(function() {
   $( "#edumore" ).slideToggle("slow");
   var $this = $(this);
